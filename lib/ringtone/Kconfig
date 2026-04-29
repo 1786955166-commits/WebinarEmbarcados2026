@@ -1,0 +1,24 @@
+config GZM_RINGTONE
+	bool "Ringtone player (PWM buzzer + RTTTL)"
+	depends on PWM
+	default n
+	help
+	  Enable the ringtone player library for PWM-driven passive
+	  buzzers with RTTTL melody playback support.
+
+	  Provides: ringtone_init, ringtone_set_volume,
+	  ringtone_play_custom (RTTTL string), ringtone_play_notification
+	  (predefined alerts), ringtone_stop, ringtone_wait_done.
+
+	  Shell commands (under `ringtone`) are available when CONFIG_SHELL
+	  is also enabled.
+
+	  Formerly: zlib/xbuzzer (CONFIG_ZLIB_XBUZZER).
+
+config GZM_RINGTONE_THREAD_STACK_SIZE
+	int "Ringtone player thread stack size"
+	depends on GZM_RINGTONE
+	default 1024
+	help
+	  Stack size for the ringtone playback thread.
+	  Increase when using coverage instrumentation (gcov).

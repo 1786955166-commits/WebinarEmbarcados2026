@@ -1,0 +1,699 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "/home/jaga/zephyrproject/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/home/jaga/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/jaga/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/jaga/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:5 (find_package)"
+    message: |
+      The target system is: Generic - 4.4.0 - arm
+      The host system is: Linux - 6.17.0-22-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/jaga/zephyrproject/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/home/jaga/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/jaga/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/jaga/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:5 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/jaga/zephyrproject/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "/home/jaga/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/jaga/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/jaga/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:5 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/jaga/zephyrproject/zephyr/cmake/modules/kernel.cmake:135 (enable_language)"
+      - "/home/jaga/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "/home/jaga/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/jaga/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:5 (find_package)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-zephyr-eabi-gcc (Zephyr SDK 1.0.1) 14.3.0
+      Copyright (C) 2024 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_missing_declarations"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_1d60c
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -o CMakeFiles/cmTC_1d60c.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_1d60c.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_1d60c.a  CMakeFiles/cmTC_1d60c.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_1d60c.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_unknown_attributes"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_be741
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=unknown-attributes -o CMakeFiles/cmTC_be741.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        FAILED: CMakeFiles/cmTC_be741.dir/simple-main.c.obj 
+        /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=unknown-attributes -o CMakeFiles/cmTC_be741.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        cc1: error: '-Werror=unknown-attributes': no option '-Wunknown-attributes'; did you mean '-Wno-attributes'?
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_attributes"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_a098b
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=attributes -o CMakeFiles/cmTC_a098b.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_a098b.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_a098b.a  CMakeFiles/cmTC_a098b.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_a098b.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_unsupported_floating_point_opt"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_1ce76
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=unsupported-floating-point-opt -o CMakeFiles/cmTC_1ce76.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        FAILED: CMakeFiles/cmTC_1ce76.dir/simple-main.c.obj 
+        /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=unsupported-floating-point-opt -o CMakeFiles/cmTC_1ce76.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        cc1: error: '-Werror=unsupported-floating-point-opt': no option '-Wunsupported-floating-point-opt'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_ignored_optimization_argument"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_e4957
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=ignored-optimization-argument -o CMakeFiles/cmTC_e4957.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        FAILED: CMakeFiles/cmTC_e4957.dir/simple-main.c.obj 
+        /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=ignored-optimization-argument -o CMakeFiles/cmTC_e4957.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        cc1: error: '-Werror=ignored-optimization-argument': no option '-Wignored-optimization-argument'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_attribute_optimize"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_a9472
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=attribute-optimize -o CMakeFiles/cmTC_a9472.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        FAILED: CMakeFiles/cmTC_a9472.dir/simple-main.c.obj 
+        /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=attribute-optimize -o CMakeFiles/cmTC_a9472.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        cc1: error: '-Werror=attribute-optimize': no option '-Wattribute-optimize'; did you mean '-Wattribute-alias='?
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_implicit_function_declaration"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_0e923
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=implicit-function-declaration -o CMakeFiles/cmTC_0e923.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_0e923.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_0e923.a  CMakeFiles/cmTC_0e923.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_0e923.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:123 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Wno_unused_command_line_argument"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_f7ddd
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Wno-unused-command-line-argument -o CMakeFiles/cmTC_f7ddd.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_f7ddd.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_f7ddd.a  CMakeFiles/cmTC_f7ddd.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_f7ddd.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:152 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:136 (picolibc_flag)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "__HAVE_BITFIELDS_IN_PACKED_STRUCTS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_e53c8
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -o CMakeFiles/cmTC_e53c8.dir/have-bitfields-in-packed-structs.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/have-bitfields-in-packed-structs.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_e53c8.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_e53c8.a  CMakeFiles/cmTC_e53c8.dir/have-bitfields-in-packed-structs.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_e53c8.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:152 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:139 (picolibc_flag)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "__HAVE_CC_INHIBIT_LOOP_TO_LIBCALL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b828b
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -o CMakeFiles/cmTC_b828b.dir/have-cc-inhibit-loop-to-libcall.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/have-cc-inhibit-loop-to-libcall.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_b828b.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_b828b.a  CMakeFiles/cmTC_b828b.dir/have-cc-inhibit-loop-to-libcall.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_b828b.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:152 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:142 (picolibc_flag)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "__HAVE_COMPLEX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_8c1ab
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -o CMakeFiles/cmTC_8c1ab.dir/have-complex.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/have-complex.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_8c1ab.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_8c1ab.a  CMakeFiles/cmTC_8c1ab.dir/have-complex.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_8c1ab.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:288 (CHECK_INCLUDE_FILE)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/CMakeFiles/CMakeScratch/TryCompile-XsIByv"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/CMakeFiles/CMakeScratch/TryCompile-XsIByv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_XTENSA_HAVE_CONFIG_CORE_ISA_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/CMakeFiles/CMakeScratch/TryCompile-XsIByv'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_476c3
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -nostartfiles -nostdlib -isystem "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -isystem "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd -o CMakeFiles/cmTC_476c3.dir/CheckIncludeFile.c.obj -c /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/CMakeFiles/CMakeScratch/TryCompile-XsIByv/CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_476c3.dir/CheckIncludeFile.c.obj 
+        /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -nostartfiles -nostdlib -isystem "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -isystem "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd -o CMakeFiles/cmTC_476c3.dir/CheckIncludeFile.c.obj -c /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/CMakeFiles/CMakeScratch/TryCompile-XsIByv/CheckIncludeFile.c
+        /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/CMakeFiles/CMakeScratch/TryCompile-XsIByv/CheckIncludeFile.c:1:10: fatal error: xtensa/config/core-isa.h: No such file or directory
+            1 | #include <xtensa/config/core-isa.h>
+              |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:135 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:336 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_fno_common"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_dc48f
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -fno-common -o CMakeFiles/cmTC_dc48f.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_dc48f.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_dc48f.a  CMakeFiles/cmTC_dc48f.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_dc48f.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:135 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:336 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_fno_stack_protector"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_7316b
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -fno-stack-protector -o CMakeFiles/cmTC_7316b.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_7316b.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_7316b.a  CMakeFiles/cmTC_7316b.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_7316b.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:135 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:336 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_ffunction_sections"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_3ea8f
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -ffunction-sections -o CMakeFiles/cmTC_3ea8f.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_3ea8f.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_3ea8f.a  CMakeFiles/cmTC_3ea8f.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_3ea8f.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:135 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:336 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_fdata_sections"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_28bf9
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -fdata-sections -o CMakeFiles/cmTC_28bf9.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_28bf9.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_28bf9.a  CMakeFiles/cmTC_28bf9.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_28bf9.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:135 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:336 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_d51fc
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Wall -o CMakeFiles/cmTC_d51fc.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_d51fc.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_d51fc.a  CMakeFiles/cmTC_d51fc.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_d51fc.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:135 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:336 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_7ca52
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Wextra -o CMakeFiles/cmTC_7ca52.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_7ca52.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_7ca52.a  CMakeFiles/cmTC_7ca52.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_7ca52.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:135 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:336 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_implicit_function_declaration"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ae946
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Werror=implicit-function-declaration -o CMakeFiles/cmTC_ae946.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_ae946.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_ae946.a  CMakeFiles/cmTC_ae946.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_ae946.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:135 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:336 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Werror_vla"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_7c81c
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Werror=vla -o CMakeFiles/cmTC_7c81c.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_7c81c.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_7c81c.a  CMakeFiles/cmTC_7c81c.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_7c81c.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:135 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:336 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Warray_bounds"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_3bb01
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Warray-bounds -o CMakeFiles/cmTC_3bb01.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_3bb01.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_3bb01.a  CMakeFiles/cmTC_3bb01.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_3bb01.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:135 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:336 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_Wold_style_definition"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_2221f
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -Wold-style-definition -o CMakeFiles/cmTC_2221f.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_2221f.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_2221f.a  CMakeFiles/cmTC_2221f.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_2221f.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:135 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:336 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_frounding_math"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ac3c4
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -frounding-math -o CMakeFiles/cmTC_ac3c4.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_ac3c4.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_ac3c4.a  CMakeFiles/cmTC_ac3c4.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_ac3c4.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:110 (try_compile)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/cmake/picolibc.cmake:135 (_picolibc_supported_compile_options)"
+      - "/home/jaga/zephyrproject/modules/lib/picolibc/CMakeLists.txt:336 (picolibc_supported_compile_options)"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jaga/zephyrproject/zephyr/cmake/modules"
+    buildResult:
+      variable: "_fsignaling_nans"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_e93ce
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Werror=missing-declarations -Werror=attributes -Werror=implicit-function-declaration -Wno-unused-command-line-argument -fsignaling-nans -o CMakeFiles/cmTC_e93ce.dir/simple-main.c.obj -c /home/jaga/zephyrproject/modules/lib/picolibc/cmake/simple-main.c
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_e93ce.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_e93ce.a  CMakeFiles/cmTC_e93ce.dir/simple-main.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_e93ce.a && :
+        
+      exitCode: 0
+...

@@ -1,0 +1,8 @@
+config GZM_COMMON
+	bool "GZM common utilities"
+	default n
+	help
+	  Foundation library with shared types and pure helpers used
+	  across multiple gzm libraries. Designed as a leaf dependency:
+	  any gzm library can `select GZM_COMMON` without pulling in
+	  transitive feature requirements.

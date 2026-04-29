@@ -1,0 +1,7 @@
+# ninja log v5
+0	11	1777488765680517184	CMakeFiles/boot_stage2.dir/home/jaga/zephyrproject/modules/hal/rpi_pico/src/rp2040/boot_stage2/boot2_w25q080.S.obj	76b8312ede44aed6
+11	47	1777488765713517284	boot_stage2	e450d39b7e2f245f
+11	47	1777488765713517284	boot_stage2.bin	e450d39b7e2f245f
+11	47	1777488765713517284	boot_stage2.S	e450d39b7e2f245f
+11	47	1777488765713517284	/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/boot_stage2.bin	e450d39b7e2f245f
+11	47	1777488765713517284	/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/boot_stage2.S	e450d39b7e2f245f

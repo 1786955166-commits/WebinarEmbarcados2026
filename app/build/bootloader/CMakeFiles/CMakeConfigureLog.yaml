@@ -1,0 +1,351 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Linux - 6.17.0-22-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-CA1Bc4"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-CA1Bc4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-CA1Bc4'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_f9a27
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -v -o CMakeFiles/cmTC_f9a27.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+        Target: arm-zephyr-eabi
+        Configured with: /__w/_temp/workspace/build/.build/arm-zephyr-eabi/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=arm-zephyr-eabi --prefix=/__w/_temp/workspace/output/arm-zephyr-eabi --exec_prefix=/__w/_temp/workspace/output/arm-zephyr-eabi --with-local-prefix=/__w/_temp/workspace/output/arm-zephyr-eabi/arm-zephyr-eabi --with-headers=/__w/_temp/workspace/output/arm-zephyr-eabi/arm-zephyr-eabi/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='Zephyr SDK 1.0.1' --with-bugurl=https://github.com/zephyrproject-rtos/sdk-ng/issues --enable-__cxa_atexit --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-default-libc=picolibc --enable-cstdio=stdio_pure --with-gmp=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpfr=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpc=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --with-isl=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --enable-lto --enable-target-optspace --disable-plugin --disable-nls --enable-multiarch --with-multilib-list=rmprofile --enable-multilib-space --enable-languages=c,c++ --with-gnu-ld --with-gnu-as --enable-initfini-array
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.3.0 (Zephyr SDK 1.0.1) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9a27.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f9a27.dir/'
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/14.3.0/cc1 -quiet -v -iprefix /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/ -D__USES_INITFINI__ /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -ftls-model=local-exec -quiet -dumpdir CMakeFiles/cmTC_f9a27.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /tmp/ccV7nomI.s
+        GNU C17 (Zephyr SDK 1.0.1) version 14.3.0 (arm-zephyr-eabi)
+        	compiled by GNU C version 8.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/include"
+        ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed"
+        ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/sys-include"
+        ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/sys-include
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include
+        End of search list.
+        Compiler executable checksum: 564d7b249030536031d583fd06dfca62
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9a27.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f9a27.dir/'
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_f9a27.dir/CMakeCCompilerABI.c.obj /tmp/ccV7nomI.s
+        GNU assembler version 2.43.1 (arm-zephyr-eabi) using BFD version (Zephyr SDK 1.0.1) 2.43.1
+        COMPILER_PATH=/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/14.3.0/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../libexec/gcc/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/
+        LIBRARY_PATH=/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9a27.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f9a27.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_f9a27.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_f9a27.a  CMakeFiles/cmTC_f9a27.dir/CMakeCCompilerABI.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_f9a27.a && :
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include]
+          add: [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed]
+          add: [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/sys-include]
+          add: [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include]
+        end of search list found
+        collapse include dir [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include] ==> [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/14.3.0/include]
+        collapse include dir [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed] ==> [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed]
+        collapse include dir [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/sys-include] ==> [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/sys-include]
+        collapse include dir [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include] ==> [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/include]
+        implicit include dirs: [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/14.3.0/include;/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed;/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/sys-include;/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-zephyr-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-CA1Bc4']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_f9a27]
+        ignore line: [[1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -v -o CMakeFiles/cmTC_f9a27.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc]
+        ignore line: [Target: arm-zephyr-eabi]
+        ignore line: [Configured with: /__w/_temp/workspace/build/.build/arm-zephyr-eabi/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=arm-zephyr-eabi --prefix=/__w/_temp/workspace/output/arm-zephyr-eabi --exec_prefix=/__w/_temp/workspace/output/arm-zephyr-eabi --with-local-prefix=/__w/_temp/workspace/output/arm-zephyr-eabi/arm-zephyr-eabi --with-headers=/__w/_temp/workspace/output/arm-zephyr-eabi/arm-zephyr-eabi/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='Zephyr SDK 1.0.1' --with-bugurl=https://github.com/zephyrproject-rtos/sdk-ng/issues --enable-__cxa_atexit --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-default-libc=picolibc --enable-cstdio=stdio_pure --with-gmp=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpfr=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpc=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --with-isl=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --enable-lto --enable-target-optspace --disable-plugin --disable-nls --enable-multiarch --with-multilib-list=rmprofile --enable-multilib-space --enable-languages=c,c++ --with-gnu-ld --with-gnu-as --enable-initfini-array]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.3.0 (Zephyr SDK 1.0.1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9a27.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f9a27.dir/']
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/14.3.0/cc1 -quiet -v -iprefix /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/ -D__USES_INITFINI__ /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -ftls-model=local-exec -quiet -dumpdir CMakeFiles/cmTC_f9a27.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /tmp/ccV7nomI.s]
+        ignore line: [GNU C17 (Zephyr SDK 1.0.1) version 14.3.0 (arm-zephyr-eabi)]
+        ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/include"]
+        ignore line: [ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/sys-include"]
+        ignore line: [ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include]
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed]
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/sys-include]
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 564d7b249030536031d583fd06dfca62]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9a27.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f9a27.dir/']
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_f9a27.dir/CMakeCCompilerABI.c.obj /tmp/ccV7nomI.s]
+        ignore line: [GNU assembler version 2.43.1 (arm-zephyr-eabi) using BFD version (Zephyr SDK 1.0.1) 2.43.1]
+        ignore line: [COMPILER_PATH=/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/14.3.0/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../libexec/gcc/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f9a27.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_f9a27.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /usr/bin/cmake -E rm -f libcmTC_f9a27.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_f9a27.a  CMakeFiles/cmTC_f9a27.dir/CMakeCCompilerABI.c.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_f9a27.a && :]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-bSVDxh"
+      binary: "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-bSVDxh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-bSVDxh'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_002e0
+        [1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-c++   -v -o CMakeFiles/cmTC_002e0.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-c++
+        Target: arm-zephyr-eabi
+        Configured with: /__w/_temp/workspace/build/.build/arm-zephyr-eabi/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=arm-zephyr-eabi --prefix=/__w/_temp/workspace/output/arm-zephyr-eabi --exec_prefix=/__w/_temp/workspace/output/arm-zephyr-eabi --with-local-prefix=/__w/_temp/workspace/output/arm-zephyr-eabi/arm-zephyr-eabi --with-headers=/__w/_temp/workspace/output/arm-zephyr-eabi/arm-zephyr-eabi/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='Zephyr SDK 1.0.1' --with-bugurl=https://github.com/zephyrproject-rtos/sdk-ng/issues --enable-__cxa_atexit --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-default-libc=picolibc --enable-cstdio=stdio_pure --with-gmp=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpfr=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpc=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --with-isl=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --enable-lto --enable-target-optspace --disable-plugin --disable-nls --enable-multiarch --with-multilib-list=rmprofile --enable-multilib-space --enable-languages=c,c++ --with-gnu-ld --with-gnu-as --enable-initfini-array
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.3.0 (Zephyr SDK 1.0.1) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_002e0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_002e0.dir/'
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/14.3.0/cc1plus -quiet -v -iprefix /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/ -D__USES_INITFINI__ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -ftls-model=local-exec -quiet -dumpdir CMakeFiles/cmTC_002e0.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /tmp/ccEOU6K0.s
+        GNU C++17 (Zephyr SDK 1.0.1) version 14.3.0 (arm-zephyr-eabi)
+        	compiled by GNU C version 8.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0"
+        ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0/arm-zephyr-eabi"
+        ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0/backward"
+        ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/include"
+        ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed"
+        ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/sys-include"
+        ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0/arm-zephyr-eabi
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0/backward
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/sys-include
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include
+        End of search list.
+        Compiler executable checksum: 9247c22499471cb1255b4b40cd4663ea
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_002e0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_002e0.dir/'
+         /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_002e0.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccEOU6K0.s
+        GNU assembler version 2.43.1 (arm-zephyr-eabi) using BFD version (Zephyr SDK 1.0.1) 2.43.1
+        COMPILER_PATH=/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/14.3.0/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../libexec/gcc/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/
+        LIBRARY_PATH=/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_002e0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_002e0.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_002e0.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_002e0.a  CMakeFiles/cmTC_002e0.dir/CMakeCXXCompilerABI.cpp.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_002e0.a && :
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0]
+          add: [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0/arm-zephyr-eabi]
+          add: [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0/backward]
+          add: [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include]
+          add: [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed]
+          add: [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/sys-include]
+          add: [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include]
+        end of search list found
+        collapse include dir [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0] ==> [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/14.3.0]
+        collapse include dir [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0/arm-zephyr-eabi] ==> [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/14.3.0/arm-zephyr-eabi]
+        collapse include dir [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0/backward] ==> [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/14.3.0/backward]
+        collapse include dir [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include] ==> [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/14.3.0/include]
+        collapse include dir [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed] ==> [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed]
+        collapse include dir [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/sys-include] ==> [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/sys-include]
+        collapse include dir [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include] ==> [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/include]
+        implicit include dirs: [/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/14.3.0;/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/14.3.0/arm-zephyr-eabi;/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/include/c++/14.3.0/backward;/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/14.3.0/include;/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed;/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/sys-include;/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-zephyr-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/CMakeFiles/CMakeScratch/TryCompile-bSVDxh']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_002e0]
+        ignore line: [[1/2] /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-c++   -v -o CMakeFiles/cmTC_002e0.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-c++]
+        ignore line: [Target: arm-zephyr-eabi]
+        ignore line: [Configured with: /__w/_temp/workspace/build/.build/arm-zephyr-eabi/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=arm-zephyr-eabi --prefix=/__w/_temp/workspace/output/arm-zephyr-eabi --exec_prefix=/__w/_temp/workspace/output/arm-zephyr-eabi --with-local-prefix=/__w/_temp/workspace/output/arm-zephyr-eabi/arm-zephyr-eabi --with-headers=/__w/_temp/workspace/output/arm-zephyr-eabi/arm-zephyr-eabi/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='Zephyr SDK 1.0.1' --with-bugurl=https://github.com/zephyrproject-rtos/sdk-ng/issues --enable-__cxa_atexit --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-default-libc=picolibc --enable-cstdio=stdio_pure --with-gmp=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpfr=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --with-mpc=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --with-isl=/__w/_temp/workspace/build/.build/arm-zephyr-eabi/buildtools --enable-lto --enable-target-optspace --disable-plugin --disable-nls --enable-multiarch --with-multilib-list=rmprofile --enable-multilib-space --enable-languages=c,c++ --with-gnu-ld --with-gnu-as --enable-initfini-array]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.3.0 (Zephyr SDK 1.0.1) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_002e0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_002e0.dir/']
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/14.3.0/cc1plus -quiet -v -iprefix /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/ -D__USES_INITFINI__ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -ftls-model=local-exec -quiet -dumpdir CMakeFiles/cmTC_002e0.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /tmp/ccEOU6K0.s]
+        ignore line: [GNU C++17 (Zephyr SDK 1.0.1) version 14.3.0 (arm-zephyr-eabi)]
+        ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0"]
+        ignore line: [ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0/arm-zephyr-eabi"]
+        ignore line: [ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0/backward"]
+        ignore line: [ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/include"]
+        ignore line: [ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/sys-include"]
+        ignore line: [ignoring duplicate directory "/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/../../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0]
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0/arm-zephyr-eabi]
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include/c++/14.3.0/backward]
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include]
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include-fixed]
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/sys-include]
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 9247c22499471cb1255b4b40cd4663ea]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_002e0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_002e0.dir/']
+        ignore line: [ /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_002e0.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccEOU6K0.s]
+        ignore line: [GNU assembler version 2.43.1 (arm-zephyr-eabi) using BFD version (Zephyr SDK 1.0.1) 2.43.1]
+        ignore line: [COMPILER_PATH=/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../libexec/gcc/arm-zephyr-eabi/14.3.0/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../libexec/gcc/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/:/home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_002e0.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_002e0.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /usr/bin/cmake -E rm -f libcmTC_002e0.a && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ar qc libcmTC_002e0.a  CMakeFiles/cmTC_002e0.dir/CMakeCXXCompilerABI.cpp.obj && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-ranlib libcmTC_002e0.a && :]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:9 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-zephyr-eabi-gcc (Zephyr SDK 1.0.1) 14.3.0
+      Copyright (C) 2024 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+...

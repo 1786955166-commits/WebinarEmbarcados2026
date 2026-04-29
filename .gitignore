@@ -1,0 +1,11 @@
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+#[Bb]uild/
+[Rr]elease/
+[Dd]efault/
+
+# Generated headers / files
+*.gz.inc
+**/include/generated/
+

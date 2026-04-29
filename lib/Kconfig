@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: Apache-2.0
+
+menu "Custom Libraries (gzm)"
+
+rsource "common/Kconfig"
+rsource "rtc_mgr/Kconfig"
+rsource "wifi_mgr/Kconfig"
+rsource "fs_mgr/Kconfig"
+rsource "ringtone/Kconfig"
+
+endmenu

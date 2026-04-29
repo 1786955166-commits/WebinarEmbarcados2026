@@ -1,0 +1,62 @@
+{
+    "version": "2.0.0",
+    "options": {
+        "env": {
+            "VIRTUAL_ENV": "${env:HOME}/zephyrproject/.venv",
+            "ZEPHYR_BASE": "${env:HOME}/zephyrproject/zephyr",
+            "ZEPHYR_SDK_INSTALL_DIR": "${env:HOME}/zephyr-sdk-1.0.1"
+        }
+    },
+    "tasks": [
+        {
+            "label": "app: build",
+            "type": "shell",
+            "group": { "kind": "build", "isDefault": true },
+            "command": "${VIRTUAL_ENV}/bin/west",
+            "args": [
+                "build", "-b", "dev_rpi_pico/rp2040/w", "-p", "-s", "app",
+                "-d", "app/build",
+                "--",
+                "-DBOARD_ROOT=${workspaceFolder}",
+                "-DDTC_OVERLAY_FILE=${workspaceFolder}/app/boards/dev_rpi_pico_rp2040_w.overlay"
+            ],
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "app: build (debug.conf)",
+            "type": "shell",
+            "group": "build",
+            "command": "${VIRTUAL_ENV}/bin/west",
+            "args": [
+                "build", "-b", "dev_rpi_pico/rp2040/w", "-p", "-s", "app",
+                "-d", "app/build",
+                "--",
+                "-DBOARD_ROOT=${workspaceFolder}",
+                "-DEXTRA_CONF_FILE=debug.conf",
+                "-DDTC_OVERLAY_FILE=${workspaceFolder}/app/boards/dev_rpi_pico_rp2040_w.overlay"
+            ],
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "app: flash",
+            "type": "shell",
+            "command": "${VIRTUAL_ENV}/bin/west",
+            "args": ["flash", "-d", "app/build"],
+            "problemMatcher": []
+        },
+        {
+            "label": "app: rom_report",
+            "type": "shell",
+            "command": "${VIRTUAL_ENV}/bin/west",
+            "args": ["build", "-d", "app/build", "-t", "rom_report"],
+            "problemMatcher": []
+        },
+        {
+            "label": "app: ram_report",
+            "type": "shell",
+            "command": "${VIRTUAL_ENV}/bin/west",
+            "args": ["build", "-d", "app/build", "-t", "ram_report"],
+            "problemMatcher": []
+        }
+    ]
+}

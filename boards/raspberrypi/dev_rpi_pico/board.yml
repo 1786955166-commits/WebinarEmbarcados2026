@@ -1,0 +1,8 @@
+board:
+  name: dev_rpi_pico
+  full_name: Dev Raspberry Pi Pico W
+  vendor: raspberrypi
+  socs:
+    - name: rp2040
+      variants:
+        - name: w

@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_DEV_RPI_PICO
+	select SOC_RP2040

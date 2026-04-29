@@ -1,0 +1,43 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "J-Link",
+            "device": "RP2040_M0_0",
+            "cwd": "${workspaceFolder}",
+            "executable": "app/build/zephyr/zephyr.elf",
+            "interface": "swd",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "jlink",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            },
+            "preLaunchTask": "app: build",
+        },
+        {
+            "name": "Pico-Probe",
+            "cwd": "${workspaceFolder}",
+            "executable": "app/build/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "device": "RP2040",
+            "configFiles": [
+                "interface/cmsis-dap.cfg",
+                "target/rp2040.cfg"
+            ],
+            "openOCDPreConfigLaunchCommands": [
+                "adapter speed 5000"
+            ],
+            "runToEntryPoint": "main",
+            "postRestartCommands": [
+                "break main",
+                "continue"
+            ],
+            "preLaunchTask": "app: build"
+        }
+    ]
+}

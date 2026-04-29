@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMBARCADOS-2026</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 0 1330 398" style="height:80px;display:block;margin:0 auto"><path d="M418.8,168.2 L419.0,123.0 L329.8,123.1 L240.5,123.1 L263.0,134.5 L285.5,145.9 L340.8,145.9 L396.0,146.0 L396.0,168.0 L396.0,190.0 L238.0,190.0 L80.0,190.0 L80.0,134.0 L80.0,78.0 L394.8,78.0 L709.5,78.1 L706.0,79.9 C704.1,80.9 644.7,111.1 574.0,147.0 C503.3,182.9 445.1,212.6 444.5,213.1 L443.6,214.0 L648.8,214.0 L854.0,214.0 L854.2,153.2 L854.5,92.4 L933.4,132.7 L1012.3,172.9 L1090.6,133.0 C1133.6,111.0 1169.1,93.0 1169.4,93.0 C1169.7,93.0 1170.1,120.1 1170.2,153.2 L1170.5,213.5 L1181.8,213.8 L1193.0,214.1 L1193.0,134.5 L1193.0,55.0 L1185.8,58.6 C1181.8,60.6 1141.1,81.3 1095.4,104.6 L1012.2,147.0 L922.1,101.0 C872.5,75.7 831.7,55.0 831.5,55.0 C831.2,55.0 831.0,85.4 831.0,122.5 L831.0,190.0 L685.8,190.0 L540.5,189.9 L546.5,186.8 C549.8,185.1 609.2,155.0 678.5,119.8 C747.8,84.6 804.7,55.6 804.9,55.4 C805.1,55.2 637.0,55.0 431.2,55.0 L57.0,55.0 L57.0,134.5 L57.0,214.0 L237.8,213.8 L418.5,213.5 L418.8,168.2 Z" fill="#fff" fill-rule="evenodd"/><text x="625" y="340" text-anchor="middle" fill="#fff" font-family="'Segoe UI',Arial,sans-serif" font-size="95" letter-spacing="18" font-weight="300">EMBEDDED SYSTEMS</text></svg></h1>
+
+    <div class="info-bar">
+        <div class="info-item"><span class="info-label">Firmware</span><span id="info-firmware">-</span></div>
+        <div class="info-item"><span class="info-label">Autor</span><span id="info-author">-</span></div>
+        <div class="info-item"><span class="info-label">Site</span><a id="info-site" href="#" target="_blank">-</a></div>
+        <div class="info-item"><span class="info-label">Contato</span><a id="info-contact" href="#">-</a></div>
+    </div>
+
+    <div class="card">
+        <h2>Date / Time (UTC-3)</h2>
+        <div id="datetime-display" class="datetime-display">--</div>
+    </div>
+
+    <div class="card">
+        <h2>Relay Control</h2>
+        <div class="relay-grid" id="relay-grid"></div>
+    </div>
+
+    <div class="card">
+        <h2>RGB LED (WS2812)</h2>
+        <div class="rgb-controls">
+            <div class="rgb-picker">
+                <div class="rgb-row">
+                    <label style="color:#e94560">R</label>
+                    <input type="range" id="rgb-r" min="0" max="255" value="0" oninput="onRgbSlider()">
+                    <span id="rgb-r-val">0</span>
+                </div>
+                <div class="rgb-row">
+                    <label style="color:#4ecca3">G</label>
+                    <input type="range" id="rgb-g" min="0" max="255" value="0" oninput="onRgbSlider()">
+                    <span id="rgb-g-val">0</span>
+                </div>
+                <div class="rgb-row">
+                    <label style="color:#4ea8de">B</label>
+                    <input type="range" id="rgb-b" min="0" max="255" value="0" oninput="onRgbSlider()">
+                    <span id="rgb-b-val">0</span>
+                </div>
+                <div class="rgb-color-input">
+                    <input type="color" id="rgb-colorpicker" value="#000000" oninput="onColorPicker()">
+                    <button class="btn-rgb" onclick="sendRgb()">Apply</button>
+                    <button class="btn-rgb-off" onclick="sendRgbOff()">OFF</button>
+                </div>
+            </div>
+            <div class="rgb-preview" id="rgb-preview"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Buzzer (RTTTL Player)</h2>
+        <textarea id="buzzer-rtttl" rows="3" maxlength="512" spellcheck="false"
+            placeholder="Name:d=4,o=5,b=100:16e6,16e6,32p,8e6,16c6,8e6,8g6..."
+            style="width:100%;border-radius:4px;padding:8px;font-family:monospace;font-size:0.85em;resize:vertical;"></textarea>
+        <div style="display:flex;gap:10px;align-items:center;margin-top:8px;flex-wrap:wrap;">
+            <button class="btn-on" onclick="buzzerPlay()">Play</button>
+            <button class="btn-off" onclick="buzzerStop()">Stop</button>
+            <select id="buzzer-presets" onchange="buzzerPreset()" style="border-radius:4px;padding:6px;font-size:0.85em;">
+                <option value="">-- Presets --</option>
+                <option value="Super Mario:d=4,o=5,b=100:16e6,16e6,32p,8e6,16c6,8e6,8g6,8p,8g,8p,8c6,16p,8g,16p,8e,16p,8a,8b,16a#,8a,16g.,16e6,16g6,8a6,16f6,8g6,8e6,16c6,16d6,8b">Super Mario</option>
+                <option value="Tetris:d=4,o=5,b=160:e6,8b,8c6,8d6,16e6,16d6,8c6,8b,a,8a,8c6,e6,8d6,8c6,b,8b,8c6,d6,e6,c6,a,2a">Tetris</option>
+                <option value="Nokia:d=4,o=5,b=225:8e6,8d6,f#,g#,8c#6,8b,d,e,8b,8a,c#,e,2a">Nokia</option>
+                <option value="StarWars:d=4,o=5,b=180:8f,8f,8f,2a#.,2f6,8d#6,8d6,8c6,2a#6.,4f6,8d#6,8d6,8c6,2a#6.,4f6,8d#6,8d6,8d#6,2c6">Star Wars</option>
+            </select>
+            <span id="buzzer-status" style="font-size:0.8em;color:var(--muted);"></span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Files</h2>
+        <div class="storage-bar">
+            <div class="storage-item"><span class="info-label">Total</span><span id="storage-total">-</span></div>
+            <div class="storage-item"><span class="info-label">Used</span><span id="storage-used">-</span></div>
+        </div>
+        <div class="breadcrumb" id="breadcrumb"></div>
+        <div style="margin-bottom: 8px;">
+            <button class="btn-refresh" onclick="fetchFiles()">Refresh</button>
+        </div>
+        <table>
+            <thead><tr><th>Name</th><th>Size</th><th>Action</th></tr></thead>
+            <tbody id="file-list"></tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Upload File</h2>
+        <div class="upload-area">
+            <input type="file" id="file-input">
+            <button class="btn-upload" onclick="uploadFile()">Upload</button>
+        </div>
+        <div id="status"></div>
+    </div>
+
+    <div class="modal-overlay" id="modal" onclick="closeModal(event)">
+        <div class="modal">
+            <div class="modal-header">
+                <span id="modal-title">File</span>
+                <button class="modal-close" onclick="closeModal()">Close</button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

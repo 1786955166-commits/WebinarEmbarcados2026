@@ -1,0 +1,16 @@
+config GZM_WIFI_MGR
+	bool "Enable XWIFI library"
+	depends on WIFI
+	select GZM_COMMON
+	default n
+	help
+	  Enable the XWIFI library for WiFi operations.
+
+config GZM_WIFI_MGR_TEST_HOOKS
+	bool "Enable wifi_mgr test hooks (for ztest only)"
+	depends on GZM_WIFI_MGR
+	default n
+	help
+	  Exposes wifi_mgr_test_post_event() so tests can inject synthetic
+	  events into the internal queue without going through net_mgmt
+	  callbacks. Should remain disabled in production builds.

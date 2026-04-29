@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" font-family="Arial,sans-serif">
+  <rect width="1280" height="720" fill="white"/>
+
+  <defs>
+    <marker id="arrb" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arro" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#d97706"/>
+    </marker>
+    <marker id="arrg" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrd" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="640" y="46" text-anchor="middle" font-size="28" font-weight="bold" fill="#1e293b">Servidor HTTP do Pico W: dois clientes, um único handler</text>
+  <line x1="80" y1="62" x2="1200" y2="62" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Column headers -->
+  <text x="260" y="98" text-anchor="middle" font-size="18" font-weight="bold" fill="#1d4ed8">Caminho 1: via página web</text>
+  <text x="1020" y="98" text-anchor="middle" font-size="18" font-weight="bold" fill="#9a3412">Caminho 2: via API direta</text>
+
+  <!-- ════════ LEFT BRANCH: Browser ════════ -->
+
+  <!-- Usuário -->
+  <rect x="160" y="120" width="200" height="55" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="260" y="155" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4ed8">Usuário</text>
+
+  <line x1="260" y1="175" x2="260" y2="200" stroke="#2563eb" stroke-width="2" marker-end="url(#arrb)"/>
+  <text x="380" y="192" text-anchor="start" font-size="11" fill="#2563eb">abre embarcados.local</text>
+
+  <!-- Browser -->
+  <rect x="160" y="205" width="200" height="55" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="260" y="240" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4ed8">Browser</text>
+
+  <line x1="260" y1="260" x2="260" y2="285" stroke="#2563eb" stroke-width="2" marker-end="url(#arrb)"/>
+  <text x="380" y="270" text-anchor="start" font-size="11" fill="#2563eb">GET /</text>
+  <text x="380" y="284" text-anchor="start" font-size="11" fill="#2563eb">GET /style.css</text>
+  <text x="380" y="298" text-anchor="start" font-size="11" fill="#2563eb">GET /app.js</text>
+
+  <!-- Static resources -->
+  <rect x="160" y="290" width="200" height="80" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="260" y="315" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d4ed8">Recursos estáticos</text>
+  <text x="260" y="335" text-anchor="middle" font-size="11" fill="#475569">index.html, style.css, app.js</text>
+  <text x="260" y="353" text-anchor="middle" font-size="11" font-style="italic" fill="#475569">(da flash, gzipados)</text>
+
+  <line x1="260" y1="370" x2="260" y2="395" stroke="#2563eb" stroke-width="2" marker-end="url(#arrb)"/>
+  <text x="380" y="386" text-anchor="start" font-size="11" fill="#2563eb">browser executa app.js</text>
+
+  <!-- app.js -->
+  <rect x="160" y="400" width="200" height="85" rx="8" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+  <text x="260" y="424" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d4ed8">app.js (no browser)</text>
+  <text x="260" y="447" text-anchor="middle" font-size="11" font-family="monospace" fill="#1e293b">fetch('/api/info')</text>
+  <text x="260" y="463" text-anchor="middle" font-size="11" font-family="monospace" fill="#1e293b">fetch('/api/relays')</text>
+  <text x="260" y="479" text-anchor="middle" font-size="11" font-family="monospace" fill="#1e293b">...</text>
+
+  <!-- ════════ RIGHT BRANCH: External clients ════════ -->
+
+  <rect x="920" y="205" width="200" height="180" rx="8" fill="#fed7aa" stroke="#d97706" stroke-width="2"/>
+  <text x="1020" y="240" text-anchor="middle" font-size="14" font-weight="bold" fill="#9a3412">Cliente externo</text>
+  <line x1="945" y1="252" x2="1095" y2="252" stroke="#d97706" stroke-width="1" opacity="0.4"/>
+  <text x="1020" y="278" text-anchor="middle" font-size="13" fill="#7c2d12">curl</text>
+  <text x="1020" y="300" text-anchor="middle" font-size="13" fill="#7c2d12">Postman</text>
+  <text x="1020" y="322" text-anchor="middle" font-size="13" fill="#7c2d12">app mobile</text>
+  <text x="1020" y="344" text-anchor="middle" font-size="13" fill="#7c2d12">outro firmware</text>
+  <text x="1020" y="370" text-anchor="middle" font-size="11" font-style="italic" fill="#9a3412">(sem carregar página)</text>
+
+  <!-- Right path: down + curl label -->
+  <line x1="1020" y1="385" x2="1020" y2="500" stroke="#d97706" stroke-width="2"/>
+  <text x="1020" y="430" text-anchor="middle" font-size="11" font-family="monospace" fill="#d97706">curl http://embarcados.local</text>
+  <text x="1020" y="446" text-anchor="middle" font-size="11" font-family="monospace" fill="#d97706">/api/...</text>
+
+  <!-- ════════ MERGE TO CONVERGENCE ════════ -->
+
+  <!-- Browser path: down + right -->
+  <line x1="260" y1="485" x2="260" y2="500" stroke="#2563eb" stroke-width="2"/>
+  <line x1="260" y1="500" x2="640" y2="500" stroke="#2563eb" stroke-width="2"/>
+
+  <!-- API path: down + left -->
+  <line x1="1020" y1="500" x2="640" y2="500" stroke="#d97706" stroke-width="2"/>
+
+  <!-- Combined arrow down to convergence -->
+  <line x1="640" y1="500" x2="640" y2="535" stroke="#475569" stroke-width="2.5" marker-end="url(#arrd)"/>
+
+  <!-- ════════ CONVERGENCE: HTTP_RESOURCE_DEFINE ════════ -->
+
+  <rect x="380" y="540" width="520" height="68" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2.5"/>
+  <text x="640" y="568" text-anchor="middle" font-size="16" font-weight="bold" fill="#1e293b">HTTP_RESOURCE_DEFINE</text>
+  <text x="640" y="590" text-anchor="middle" font-size="12" font-family="monospace" fill="#475569">web_app.c, porta 80</text>
+  <text x="640" y="604" text-anchor="middle" font-size="11" font-style="italic" fill="#64748b">ponto único de entrada</text>
+
+  <!-- Convergence label callout -->
+  <text x="200" y="572" text-anchor="start" font-size="13" font-weight="bold" fill="#475569">Os dois</text>
+  <text x="200" y="590" text-anchor="start" font-size="13" font-weight="bold" fill="#475569">caminhos</text>
+  <text x="200" y="608" text-anchor="start" font-size="13" font-weight="bold" fill="#475569">convergem aqui</text>
+  <line x1="290" y1="585" x2="375" y2="572" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <line x1="640" y1="608" x2="640" y2="635" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arrg)"/>
+
+  <!-- ════════ HANDLER + HARDWARE ════════ -->
+
+  <rect x="380" y="640" width="520" height="60" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="640" y="665" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">Handler em C → Hardware</text>
+  <text x="640" y="687" text-anchor="middle" font-size="12" fill="#166534">GPIO (relés), RTC, LittleFS, PWM (buzzer), WS2812 (RGB)</text>
+
+</svg>

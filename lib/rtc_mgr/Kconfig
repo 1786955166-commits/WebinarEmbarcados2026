@@ -1,0 +1,9 @@
+config GZM_RTC_MGR
+	bool "RTC manager (datetime manipulation, formatting, conversion)"
+	depends on RTC
+	default n
+	help
+	  RTC manager with field-by-field setters, timestamp/rtc_time
+	  conversion, string formatting, and leap year helper.
+
+	  Formerly: zlib/xrtc (CONFIG_ZLIB_XRTC).

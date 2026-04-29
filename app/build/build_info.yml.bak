@@ -1,0 +1,6 @@
+west:
+  command: /home/jaga/zephyrproject/.venv/bin/west build -b dev_rpi_pico/rp2040/w
+    -p -s app -d app/build -- -DBOARD_ROOT=/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026
+    -DEXTRA_CONF_FILE=debug.conf -DDTC_OVERLAY_FILE=/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay
+  topdir: /home/jaga/zephyrproject
+  version: 1.5.0
