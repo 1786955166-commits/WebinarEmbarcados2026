@@ -34,7 +34,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/
+cmake_ninja_workdir = /home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/bootloader/
 # =============================================================================
 # Object build statements for EXECUTABLE target boot_stage2
 
@@ -65,7 +65,7 @@ build CMakeFiles/boot_stage2.dir/home/jaga/zephyrproject/modules/hal/rpi_pico/sr
 build boot_stage2 boot_stage2.bin boot_stage2.S | ${cmake_ninja_workdir}boot_stage2.bin ${cmake_ninja_workdir}boot_stage2.S: ASM_EXECUTABLE_LINKER__boot_stage2_ CMakeFiles/boot_stage2.dir/home/jaga/zephyrproject/modules/hal/rpi_pico/src/rp2040/boot_stage2/boot2_w25q080.S.obj
   LINK_FLAGS = --specs=picolibc.specs -nostartfiles -T/home/jaga/zephyrproject/modules/hal/rpi_pico/src/rp2040/boot_stage2/boot_stage2.ld
   OBJECT_DIR = CMakeFiles/boot_stage2.dir
-  POST_BUILD = cd /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-objcopy -Obinary /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/boot_stage2 boot_stage2.bin && cd /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader && /home/jaga/zephyrproject/.venv/bin/python3 /home/jaga/zephyrproject/modules/hal/rpi_pico/src/rp2040/boot_stage2/pad_checksum -s 0xffffffff boot_stage2.bin /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader/boot_stage2.S
+  POST_BUILD = cd /home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/bootloader && /home/jaga/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-objcopy -Obinary /home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/bootloader/boot_stage2 boot_stage2.bin && cd /home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/bootloader && /home/jaga/zephyrproject/.venv/bin/python3 /home/jaga/zephyrproject/modules/hal/rpi_pico/src/rp2040/boot_stage2/pad_checksum -s 0xffffffff boot_stage2.bin /home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/bootloader/boot_stage2.S
   PRE_LINK = :
   RESTAT = 1
   TARGET_COMPILE_PDB = CMakeFiles/boot_stage2.dir/
@@ -77,7 +77,7 @@ build boot_stage2 boot_stage2.bin boot_stage2.S | ${cmake_ninja_workdir}boot_sta
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/bootloader && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -88,7 +88,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader && /usr/bin/cmake --regenerate-during-build -S/home/jaga/zephyrproject/zephyr/modules/hal_rpi_pico/bootloader -B/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader
+  COMMAND = cd /home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/bootloader && /usr/bin/cmake --regenerate-during-build -S/home/jaga/zephyrproject/zephyr/modules/hal_rpi_pico/bootloader -B/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/bootloader
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -104,7 +104,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader
+# Folder: /home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/bootloader
 
 build all: phony boot_stage2
 

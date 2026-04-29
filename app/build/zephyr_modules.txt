@@ -62,4 +62,5 @@
 "trusted-firmware-m":"/home/jaga/zephyrproject/modules/tee/tf-m/trusted-firmware-m":"${ZEPHYR_TRUSTED_FIRMWARE_M_CMAKE_DIR}"
 "uoscore-uedhoc":"/home/jaga/zephyrproject/modules/lib/uoscore-uedhoc":"${ZEPHYR_UOSCORE_UEDHOC_CMAKE_DIR}"
 "zcbor":"/home/jaga/zephyrproject/modules/lib/zcbor":"${ZEPHYR_ZCBOR_CMAKE_DIR}"
+"gzm":"/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/lib":"/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/lib/zephyr"
 "nrf_hw_models":"/home/jaga/zephyrproject/modules/bsim_hw_models/nrf_hw_models":"/home/jaga/zephyrproject/modules/bsim_hw_models/nrf_hw_models"

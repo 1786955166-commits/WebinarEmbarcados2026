@@ -14,7 +14,7 @@ debug-runner: openocd
 
 # Common runner configuration values.
 config:
-  board_dir: /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico
+  board_dir: /home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico
   # Build outputs:
   elf_file: zephyr.elf
   hex_file: zephyr.hex

@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/jaga/zephyrproject/zephyr/modules/hal_rpi_pico/bootloader -B/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/bootloader
+  command = /usr/bin/cmake --regenerate-during-build -S/home/jaga/zephyrproject/zephyr/modules/hal_rpi_pico/bootloader -B/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/bootloader
   description = Re-running CMake...
   generator = 1
 

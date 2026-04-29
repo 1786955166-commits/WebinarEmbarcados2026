@@ -98,6 +98,7 @@ Build padrão usando apenas `prj.conf`, recomendado para deploy:
 ```bash
 $ west build -b dev_rpi_pico/rp2040/w -p -s app -d app/build \
     -- -DBOARD_ROOT=${PWD} \
+       -DZEPHYR_EXTRA_MODULES=${PWD}/lib \
        -DDTC_OVERLAY_FILE=${PWD}/app/boards/dev_rpi_pico_rp2040_w.overlay
 
 -- Zephyr version: 4.4.0 (/home/jaga/zephyrproject/zephyr)
@@ -121,6 +122,7 @@ via GDB / Cortex-Debug:
 ```bash
 $ west build -b dev_rpi_pico/rp2040/w -p -s app -d app/build \
     -- -DBOARD_ROOT=${PWD} \
+       -DZEPHYR_EXTRA_MODULES=${PWD}/lib \
        -DEXTRA_CONF_FILE="debug.conf" \
        -DDTC_OVERLAY_FILE=${PWD}/app/boards/dev_rpi_pico_rp2040_w.overlay
 ```
@@ -227,9 +229,87 @@ derivada do
 
 Após compilar, o Zephyr gera arquivos úteis para depurar configuração:
 
-* [`app/build/app/zephyr/zephyr.dts`](app/build/app/zephyr/zephyr.dts), DT final
+* [`app/build/zephyr/zephyr.dts`](app/build/zephyr/zephyr.dts), DT final
   após merge de `.dts` + `.dtsi` + overlays
-* [`app/build/app/zephyr/include/generated/zephyr/autoconf.h`](app/build/app/zephyr/include/generated/zephyr/autoconf.h),
+* [`app/build/zephyr/include/generated/zephyr/autoconf.h`](app/build/zephyr/include/generated/zephyr/autoconf.h),
   todas as macros `CONFIG_*` ativas após merge de `prj.conf` + `debug.conf`
-* [`app/build/app/zephyr/zephyr.map`](app/build/app/zephyr/zephyr.map), mapa de
+* [`app/build/zephyr/zephyr.map`](app/build/zephyr/zephyr.map), mapa de
   memória, tamanho/localização de funções e símbolos
+
+## 7. RTTTL
+
+[RTTTL](https://en.wikipedia.org/wiki/Ring_Tone_Text_Transfer_Language)
+(Ring Tone Text Transfer Language) é um formato em texto criado pela Nokia
+para descrever ringtones monofônicos. Cada string segue o padrão:
+
+```
+<nome>:<controle>:<notas>
+```
+
+- **nome**, identificador (até 10 caracteres)
+- **controle**, defaults: `d=` duração, `o=` oitava, `b=` BPM (ex.: `d=4,o=5,b=100`)
+- **notas**, sequência separada por vírgula no formato `[duração]nota[oitava][.]`,
+  onde `.` indica nota pontuada (1.5×) e `p` é pausa
+
+Exemplo (Mario theme, abreviado):
+
+```
+Mario:d=4,o=5,b=100:16e6,16e6,32p,8e6,16c6,8e6,8g6
+```
+
+Este projeto reproduz RTTTL no buzzer passivo (GP6, PWM) através da
+biblioteca [`lib/ringtone/`](lib/ringtone/), com três formas de uso:
+
+**1. Shell (UART/USB CDC ou Telnet porta 23):**
+
+```
+uart:~$ ringtone test                       # toca tema do Mario embutido
+uart:~$ ringtone alarm 1                    # alarmes pré-definidos
+uart:~$ ringtone play "Beep:d=4,o=5,b=100:c,e,g"
+uart:~$ ringtone stop
+uart:~$ ringtone status
+```
+
+**2. REST API** (`/api/buzzer`, ver [doc/pages/api-buzzer.md](doc/pages/api-buzzer.md)):
+
+```bash
+$ curl -X POST http://embarcados.local/api/buzzer \
+    -H "Content-Type: application/json" \
+    -d '{"action":"play","rtttl":"Beep:d=4,o=5,b=100:c,e,g"}'
+$ curl -X POST http://embarcados.local/api/buzzer -d '{"action":"stop"}'
+```
+
+**3. C API** (incluindo `<gzm/ringtone.h>`):
+
+```c
+ringtone_play_custom("Beep:d=4,o=5,b=100:c,e,g");
+ringtone_play_notification(RINGTONE_ALARM1);
+ringtone_stop();
+```
+
+Coleções de strings RTTTL prontas:
+[picaxe.com/rtttl-ringtones-for-tune](http://www.picaxe.com/rtttl-ringtones-for-tune/),
+[mines.lumpylumpy.com/Electronics/Computers/Software/Cpp/MFC/RingTones.php](https://mines.lumpylumpy.com/Electronics/Computers/Software/Cpp/MFC/RingTones.php).
+
+## 8. Firmware DebugProbe
+
+A [Raspberry Pi Debug Probe](https://www.raspberrypi.com/products/debug-probe/) é
+um adaptador USB→SWD/UART baseado no RP2040 que implementa o protocolo
+**CMSIS-DAP**, permitindo flash + debug via OpenOCD sem depender do modo BOOTSEL.
+Também é possível transformar um Pico comum em probe gravando o firmware
+[`debugprobe_on_pico.uf2`](https://github.com/raspberrypi/debugprobe/releases/tag/debugprobe-v2.3.0)
+(use `debugprobe.uf2` para a placa oficial).
+
+**Procedimento de flash do probe:**
+
+1. Pressione BOOTSEL no Pico/Probe e conecte o USB, monte o volume `RPI-RP2`
+2. Copie o `.uf2` correspondente, o dispositivo reinicia automaticamente como
+   CMSIS-DAP (`lsusb` deve mostrar `2e8a:000c Raspberry Pi Debug Probe`)
+
+## 9. Shell via Telnet
+
+```bash
+telnet embarcados.local
+# ou
+ncat embarcados.local 23
+```

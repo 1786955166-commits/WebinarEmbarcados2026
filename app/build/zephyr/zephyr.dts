@@ -7,29 +7,29 @@
 
 	/* node '/chosen' defined in zephyr/dts/common/skeleton.dtsi:13 */
 	chosen {
-		zephyr,sram = &sram0;                    /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:17 */
-		zephyr,flash = &flash0;                  /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:18 */
-		zephyr,flash-controller = &ssi;          /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:19 */
-		zephyr,code-partition = &code_partition; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:22 */
-		zephyr,console = &cdc_acm_uart0;         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:21 */
-		zephyr,shell-uart = &cdc_acm_uart0;      /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:22 */
+		zephyr,sram = &sram0;                    /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:17 */
+		zephyr,flash = &flash0;                  /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:18 */
+		zephyr,flash-controller = &ssi;          /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:19 */
+		zephyr,code-partition = &code_partition; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:22 */
+		zephyr,console = &cdc_acm_uart0;         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:21 */
+		zephyr,shell-uart = &cdc_acm_uart0;      /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:22 */
 	};
 
 	/* node '/aliases' defined in zephyr/dts/common/skeleton.dtsi:15 */
 	aliases {
 		die-temp0 = &die_temp;  /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:28 */
-		rtc = &rtc;             /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:26 */
-		watchdog0 = &wdt0;      /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:27 */
-		relay1 = &relay1;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:48 */
-		relay2 = &relay2;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:49 */
-		relay3 = &relay3;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:50 */
-		relay4 = &relay4;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:51 */
-		relay5 = &relay5;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:52 */
-		relay6 = &relay6;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:53 */
-		relay7 = &relay7;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:54 */
-		relay8 = &relay8;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:55 */
-		pwm-buzzer0 = &buzzer0; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:56 */
-		led-strip = &ws2812;    /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:57 */
+		rtc = &rtc;             /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:26 */
+		watchdog0 = &wdt0;      /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:27 */
+		relay1 = &relay1;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:48 */
+		relay2 = &relay2;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:49 */
+		relay3 = &relay3;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:50 */
+		relay4 = &relay4;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:51 */
+		relay5 = &relay5;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:52 */
+		relay6 = &relay6;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:53 */
+		relay7 = &relay7;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:54 */
+		relay8 = &relay8;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:55 */
+		pwm-buzzer0 = &buzzer0; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:56 */
+		led-strip = &ws2812;    /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:57 */
 	};
 
 	/* node '/soc' defined in zephyr/dts/arm/armv6-m.dtsi:6 */
@@ -78,34 +78,34 @@
 				erase-block-size = < 0x1000 >;        /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:207 */
 				#address-cells = < 0x1 >;             /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:208 */
 				#size-cells = < 0x1 >;                /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:209 */
-				reg = < 0x10000000 0x200000 >;        /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:65 */
-				ranges = < 0x0 0x10000000 0x200000 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:66 */
+				reg = < 0x10000000 0x200000 >;        /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:65 */
+				ranges = < 0x0 0x10000000 0x200000 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:66 */
 
-				/* node '/soc/flash-controller@18000000/flash@10000000/partitions' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:68 */
+				/* node '/soc/flash-controller@18000000/flash@10000000/partitions' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:68 */
 				partitions {
-					compatible = "fixed-partitions"; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:149 */
-					#address-cells = < 0x1 >;        /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:150 */
-					#size-cells = < 0x1 >;           /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:151 */
+					compatible = "fixed-partitions"; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:149 */
+					#address-cells = < 0x1 >;        /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:150 */
+					#size-cells = < 0x1 >;           /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:151 */
 
-					/* node '/soc/flash-controller@18000000/flash@10000000/partitions/partition@0' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:74 */
+					/* node '/soc/flash-controller@18000000/flash@10000000/partitions/partition@0' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:74 */
 					second_stage_bootloader: partition@0 {
-						label = "second_stage_bootloader"; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:154 */
-						reg = < 0x0 0x100 >;               /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:155 */
-						read-only;                         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:156 */
+						label = "second_stage_bootloader"; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:154 */
+						reg = < 0x0 0x100 >;               /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:155 */
+						read-only;                         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:156 */
 					};
 
-					/* node '/soc/flash-controller@18000000/flash@10000000/partitions/partition@100' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:84 */
+					/* node '/soc/flash-controller@18000000/flash@10000000/partitions/partition@100' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:84 */
 					code_partition: partition@100 {
-						label = "code-partition"; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:160 */
-						reg = < 0x100 0x1eff00 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:161 */
-						read-only;                /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:162 */
+						label = "code-partition"; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:160 */
+						reg = < 0x100 0x1eff00 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:161 */
+						read-only;                /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:162 */
 					};
 
-					/* node '/soc/flash-controller@18000000/flash@10000000/partitions/partition@1f0000' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:165 */
+					/* node '/soc/flash-controller@18000000/flash@10000000/partitions/partition@1f0000' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:165 */
 					storage_partition: partition@1f0000 {
-						label = "storage";          /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:166 */
-						reg = < 0x1f0000 0x10000 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:167 */
-						phandle = < 0x23 >;         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:69 */
+						label = "storage";          /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:166 */
+						reg = < 0x1f0000 0x10000 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:167 */
+						phandle = < 0x23 >;         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:69 */
 					};
 				};
 			};
@@ -187,7 +187,7 @@
 				gpio-controller;                           /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:258 */
 				#gpio-cells = < 0x2 >;                     /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:259 */
 				ngpios = < 0x1e >;                         /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:260 */
-				status = "okay";                           /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:100 */
+				status = "okay";                           /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:100 */
 				phandle = < 0x13 >;                        /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:248 */
 			};
 		};
@@ -201,10 +201,10 @@
 			resets = < &reset 0x16 >;             /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:268 */
 			interrupts = < 0x14 0x3 >;            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:269 */
 			interrupt-names = "uart0";            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:270 */
-			current-speed = < 0x1c200 >;          /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:93 */
-			status = "okay";                      /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:94 */
-			pinctrl-0 = < &uart0_default >;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:95 */
-			pinctrl-names = "default";            /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:96 */
+			current-speed = < 0x1c200 >;          /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:93 */
+			status = "okay";                      /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:94 */
+			pinctrl-0 = < &uart0_default >;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:95 */
+			pinctrl-names = "default";            /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:96 */
 		};
 
 		/* node '/soc/uart@40038000' defined in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:274 */
@@ -230,10 +230,10 @@
 			resets = < &reset 0x10 >;            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:290 */
 			interrupts = < 0x12 0x3 >;           /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:291 */
 			interrupt-names = "spi0";            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:292 */
-			clock-frequency = < 0x7a1200 >;      /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:118 */
-			status = "okay";                     /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:119 */
-			pinctrl-0 = < &spi0_default >;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:120 */
-			pinctrl-names = "default";           /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:121 */
+			clock-frequency = < 0x7a1200 >;      /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:118 */
+			status = "okay";                     /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:119 */
+			pinctrl-0 = < &spi0_default >;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:120 */
+			pinctrl-names = "default";           /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:121 */
 		};
 
 		/* node '/soc/spi@40040000' defined in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:296 */
@@ -259,9 +259,9 @@
 			interrupts = < 0x16 0x3 >;           /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:313 */
 			interrupt-names = "adc0";            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:314 */
 			#io-channel-cells = < 0x1 >;         /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:316 */
-			status = "okay";                     /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:138 */
-			pinctrl-0 = < &adc_default >;        /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:139 */
-			pinctrl-names = "default";           /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:140 */
+			status = "okay";                     /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:138 */
+			pinctrl-0 = < &adc_default >;        /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:139 */
+			pinctrl-names = "default";           /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:140 */
 			phandle = < 0x21 >;                  /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:476 */
 		};
 
@@ -276,10 +276,10 @@
 			clocks = < &clocks 0x5 >;            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:325 */
 			interrupts = < 0x17 0x3 >;           /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:326 */
 			interrupt-names = "i2c0";            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:327 */
-			clock-frequency = < 0x186a0 >;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:104 */
-			status = "okay";                     /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:105 */
-			pinctrl-0 = < &i2c0_default >;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:106 */
-			pinctrl-names = "default";           /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:107 */
+			clock-frequency = < 0x186a0 >;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:104 */
+			status = "okay";                     /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:105 */
+			pinctrl-0 = < &i2c0_default >;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:106 */
+			pinctrl-names = "default";           /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:107 */
 		};
 
 		/* node '/soc/i2c@40048000' defined in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:331 */
@@ -293,10 +293,10 @@
 			clocks = < &clocks 0x5 >;            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:337 */
 			interrupts = < 0x18 0x3 >;           /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:338 */
 			interrupt-names = "i2c1";            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:339 */
-			pinctrl-0 = < &i2c1_default >;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:111 */
-			pinctrl-names = "default";           /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:112 */
-			status = "disabled";                 /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:113 */
-			clock-frequency = < 0x61a80 >;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:114 */
+			pinctrl-0 = < &i2c1_default >;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:111 */
+			pinctrl-names = "default";           /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:112 */
+			status = "disabled";                 /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:113 */
+			clock-frequency = < 0x61a80 >;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:114 */
 		};
 
 		/* node '/soc/watchdog@40058000' defined in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:343 */
@@ -304,7 +304,7 @@
 			compatible = "raspberrypi,pico-watchdog"; /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:344 */
 			reg = < 0x40058000 0x1000 >;              /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:345 */
 			clocks = < &clocks 0x4 >;                 /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:346 */
-			status = "okay";                          /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:129 */
+			status = "okay";                          /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:129 */
 		};
 
 		/* node '/soc/usbd@50110000' defined in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:350 */
@@ -316,11 +316,11 @@
 			interrupts = < 0x5 0x3 >;             /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:355 */
 			interrupt-names = "usbctrl";          /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:356 */
 			num-bidir-endpoints = < 0x10 >;       /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:357 */
-			status = "okay";                      /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:144 */
+			status = "okay";                      /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:144 */
 
-			/* node '/soc/usbd@50110000/cdc_acm_uart0' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:174 */
+			/* node '/soc/usbd@50110000/cdc_acm_uart0' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:174 */
 			cdc_acm_uart0: cdc_acm_uart0 {
-				compatible = "zephyr,cdc-acm-uart"; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:175 */
+				compatible = "zephyr,cdc-acm-uart"; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:175 */
 			};
 		};
 
@@ -333,10 +333,10 @@
 			interrupts = < 0x4 0x3 >;            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:366 */
 			interrupt-names = "PWM_IRQ_WRAP";    /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:367 */
 			#pwm-cells = < 0x3 >;                /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:369 */
-			status = "okay";                     /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:92 */
-			pinctrl-0 = < &pwm_ch3a_default >;   /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:93 */
-			pinctrl-names = "default";           /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:94 */
-			phandle = < 0x22 >;                  /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:42 */
+			status = "okay";                     /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:92 */
+			pinctrl-0 = < &pwm_ch3a_default >;   /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:93 */
+			pinctrl-names = "default";           /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:94 */
+			phandle = < 0x22 >;                  /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:42 */
 		};
 
 		/* node '/soc/timer@40054000' defined in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:372 */
@@ -353,7 +353,7 @@
 			                  "TIMER_IRQ_1",
 			                  "TIMER_IRQ_2",
 			                  "TIMER_IRQ_3";       /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:381 */
-			status = "okay";                       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:125 */
+			status = "okay";                       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:125 */
 		};
 
 		/* node '/soc/dma@50000000' defined in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:388 */
@@ -378,8 +378,8 @@
 			status = "okay";                                  /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:404 */
 			raspberrypi,brown-out-detection;                  /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:405 */
 			raspberrypi,brown-out-threshold = < 0xd1f60 >;    /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:406 */
-			regulator-always-on;                              /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:153 */
-			regulator-allowed-modes = < 0x0 >;                /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:154 */
+			regulator-always-on;                              /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:153 */
+			regulator-allowed-modes = < 0x0 >;                /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:154 */
 		};
 
 		/* node '/soc/pio@50200000' defined in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:409 */
@@ -392,43 +392,43 @@
 			             < 0x8 0x3 >;            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:414 */
 			interrupt-names = "irq0",
 			                  "irq1";            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:416 */
-			status = "okay";                     /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:38 */
+			status = "okay";                     /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:38 */
 
-			/* node '/soc/pio@50200000/pio0_spi0' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:40 */
+			/* node '/soc/pio@50200000/pio0_spi0' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:40 */
 			pio0_spi0: pio0_spi0 {
-				compatible = "raspberrypi,pico-spi-pio"; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:41 */
-				clocks = < &clocks 0x5 >;                /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:42 */
-				#address-cells = < 0x1 >;                /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:43 */
-				#size-cells = < 0x0 >;                   /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:44 */
-				cs-gpios = < &gpio0 0x19 0x1 >;          /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:45 */
-				clk-gpios = < &gpio0 0x1d 0x0 >;         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:46 */
-				sio-gpios = < &gpio0 0x18 0x0 >;         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:47 */
-				pinctrl-0 = < &pio0_spi0_default >;      /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:48 */
-				pinctrl-names = "default";               /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:49 */
-				status = "okay";                         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:50 */
+				compatible = "raspberrypi,pico-spi-pio"; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:41 */
+				clocks = < &clocks 0x5 >;                /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:42 */
+				#address-cells = < 0x1 >;                /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:43 */
+				#size-cells = < 0x0 >;                   /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:44 */
+				cs-gpios = < &gpio0 0x19 0x1 >;          /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:45 */
+				clk-gpios = < &gpio0 0x1d 0x0 >;         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:46 */
+				sio-gpios = < &gpio0 0x18 0x0 >;         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:47 */
+				pinctrl-0 = < &pio0_spi0_default >;      /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:48 */
+				pinctrl-names = "default";               /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:49 */
+				status = "okay";                         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:50 */
 
-				/* node '/soc/pio@50200000/pio0_spi0/airoc-wifi@0' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:52 */
+				/* node '/soc/pio@50200000/pio0_spi0/airoc-wifi@0' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:52 */
 				airoc-wifi@0 {
-					compatible = "infineon,airoc-wifi";         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:53 */
-					reg = < 0x0 >;                              /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:54 */
-					wifi-reg-on-gpios = < &gpio0 0x17 0x0 >;    /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:55 */
-					bus-select-gpios = < &gpio0 0x18 0x0 >;     /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:56 */
-					wifi-host-wake-gpios = < &gpio0 0x18 0x0 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:57 */
-					spi-max-frequency = < 0x989680 >;           /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:58 */
-					spi-half-duplex;                            /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:59 */
-					spi-data-irq-shared;                        /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:60 */
-					pinctrl-0 = < &airoc_wifi_default >;        /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:61 */
-					pinctrl-1 = < &airoc_wifi_host_wake >;      /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:62 */
+					compatible = "infineon,airoc-wifi";         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:53 */
+					reg = < 0x0 >;                              /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:54 */
+					wifi-reg-on-gpios = < &gpio0 0x17 0x0 >;    /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:55 */
+					bus-select-gpios = < &gpio0 0x18 0x0 >;     /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:56 */
+					wifi-host-wake-gpios = < &gpio0 0x18 0x0 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:57 */
+					spi-max-frequency = < 0x989680 >;           /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:58 */
+					spi-half-duplex;                            /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:59 */
+					spi-data-irq-shared;                        /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:60 */
+					pinctrl-0 = < &airoc_wifi_default >;        /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:61 */
+					pinctrl-1 = < &airoc_wifi_host_wake >;      /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:62 */
 					pinctrl-names = "default",
-					                "host_wake";                /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:63 */
-					status = "okay";                            /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:64 */
+					                "host_wake";                /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:63 */
+					status = "okay";                            /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:64 */
 
-					/* node '/soc/pio@50200000/pio0_spi0/airoc-wifi@0/gpio' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:66 */
+					/* node '/soc/pio@50200000/pio0_spi0/airoc-wifi@0/gpio' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:66 */
 					cyw43_gpio: gpio {
-						compatible = "infineon,cyw43-gpio"; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:67 */
-						gpio-controller;                    /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:68 */
-						#gpio-cells = < 0x2 >;              /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:69 */
-						ngpios = < 0x3 >;                   /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:70 */
+						compatible = "infineon,cyw43-gpio"; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:67 */
+						gpio-controller;                    /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:68 */
+						#gpio-cells = < 0x2 >;              /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:69 */
+						ngpios = < 0x3 >;                   /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:70 */
 					};
 				};
 			};
@@ -444,25 +444,25 @@
 			             < 0xa 0x3 >;            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:425 */
 			interrupt-names = "irq0",
 			                  "irq1";            /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:427 */
-			status = "okay";                     /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:99 */
+			status = "okay";                     /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:99 */
 
-			/* node '/soc/pio@50300000/pio1_ws2812' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:101 */
+			/* node '/soc/pio@50300000/pio1_ws2812' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:101 */
 			pio1_ws2812: pio1_ws2812 {
-				compatible = "worldsemi,ws2812-rpi_pico-pio"; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:102 */
-				status = "okay";                              /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:103 */
-				pinctrl-0 = < &pio1_ws2812_default >;         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:104 */
-				pinctrl-names = "default";                    /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:105 */
+				compatible = "worldsemi,ws2812-rpi_pico-pio"; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:102 */
+				status = "okay";                              /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:103 */
+				pinctrl-0 = < &pio1_ws2812_default >;         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:104 */
+				pinctrl-names = "default";                    /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:105 */
 				bit-waveform = < 0x3 >,
 				               < 0x3 >,
-				               < 0x4 >;                       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:106 */
+				               < 0x4 >;                       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:106 */
 
-				/* node '/soc/pio@50300000/pio1_ws2812/ws2812' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:108 */
+				/* node '/soc/pio@50300000/pio1_ws2812/ws2812' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:108 */
 				ws2812: ws2812 {
-					gpios = < &gpio0 0xd 0x0 >;      /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:109 */
-					chain-length = < 0x1 >;          /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:110 */
-					color-mapping = < 0x2 0x1 0x3 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:111 */
-					reset-delay = < 0x118 >;         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:114 */
-					frequency = < 0xc3500 >;         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:115 */
+					gpios = < &gpio0 0xd 0x0 >;      /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:109 */
+					chain-length = < 0x1 >;          /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:110 */
+					color-mapping = < 0x2 0x1 0x3 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:111 */
+					reset-delay = < 0x118 >;         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:114 */
+					frequency = < 0xc3500 >;         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:115 */
 				};
 			};
 		};
@@ -475,8 +475,8 @@
 			interrupt-names = "rtc";             /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:435 */
 			resets = < &reset 0xf >;             /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:436 */
 			alarms-count = < 0x1 >;              /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:437 */
-			clocks = < &clocks 0x9 >;            /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:133 */
-			status = "okay";                     /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:122 */
+			clocks = < &clocks 0x9 >;            /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:133 */
+			status = "okay";                     /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:122 */
 		};
 
 		/* node '/soc/sio@d0000000' defined in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:441 */
@@ -717,138 +717,138 @@
 	pinctrl: pin-controller {
 		compatible = "raspberrypi,pico-pinctrl"; /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:471 */
 
-		/* node '/pin-controller/uart0_default' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:8 */
+		/* node '/pin-controller/uart0_default' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:8 */
 		uart0_default: uart0_default {
-			phandle = < 0x16 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:95 */
+			phandle = < 0x16 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:95 */
 
-			/* node '/pin-controller/uart0_default/group1' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:9 */
+			/* node '/pin-controller/uart0_default/group1' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:9 */
 			group1 {
-				pinmux = < 0x2 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:10 */
+				pinmux = < 0x2 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:10 */
 			};
 
-			/* node '/pin-controller/uart0_default/group2' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:13 */
+			/* node '/pin-controller/uart0_default/group2' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:13 */
 			group2 {
-				pinmux = < 0x22 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:14 */
-				input-enable;      /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:15 */
+				pinmux = < 0x22 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:14 */
+				input-enable;      /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:15 */
 			};
 		};
 
-		/* node '/pin-controller/i2c0_default' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:19 */
+		/* node '/pin-controller/i2c0_default' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:19 */
 		i2c0_default: i2c0_default {
-			phandle = < 0x19 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:106 */
+			phandle = < 0x19 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:106 */
 
-			/* node '/pin-controller/i2c0_default/group1' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:20 */
+			/* node '/pin-controller/i2c0_default/group1' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:20 */
 			group1 {
 				pinmux = < 0x83 >,
-				         < 0xa3 >;    /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:21 */
-				input-enable;         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:22 */
-				input-schmitt-enable; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:23 */
+				         < 0xa3 >;    /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:21 */
+				input-enable;         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:22 */
+				input-schmitt-enable; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:23 */
 			};
 		};
 
-		/* node '/pin-controller/i2c1_default' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:27 */
+		/* node '/pin-controller/i2c1_default' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:27 */
 		i2c1_default: i2c1_default {
-			phandle = < 0x1a >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:111 */
+			phandle = < 0x1a >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:111 */
 
-			/* node '/pin-controller/i2c1_default/group1' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:28 */
+			/* node '/pin-controller/i2c1_default/group1' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:28 */
 			group1 {
 				pinmux = < 0xc3 >,
-				         < 0xe3 >;    /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:29 */
-				input-enable;         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:30 */
-				input-schmitt-enable; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:31 */
+				         < 0xe3 >;    /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:29 */
+				input-enable;         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:30 */
+				input-schmitt-enable; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:31 */
 			};
 		};
 
-		/* node '/pin-controller/spi0_default' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:35 */
+		/* node '/pin-controller/spi0_default' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:35 */
 		spi0_default: spi0_default {
-			phandle = < 0x17 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:120 */
+			phandle = < 0x17 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:120 */
 
-			/* node '/pin-controller/spi0_default/group1' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:36 */
+			/* node '/pin-controller/spi0_default/group1' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:36 */
 			group1 {
 				pinmux = < 0x221 >,
 				         < 0x241 >,
-				         < 0x261 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:37 */
+				         < 0x261 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:37 */
 			};
 
-			/* node '/pin-controller/spi0_default/group2' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:40 */
+			/* node '/pin-controller/spi0_default/group2' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:40 */
 			group2 {
-				pinmux = < 0x201 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:41 */
-				input-enable;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:42 */
+				pinmux = < 0x201 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:41 */
+				input-enable;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:42 */
 			};
 		};
 
-		/* node '/pin-controller/pwm_ch4b_default' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:46 */
+		/* node '/pin-controller/pwm_ch4b_default' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:46 */
 		pwm_ch4b_default: pwm_ch4b_default {
 
-			/* node '/pin-controller/pwm_ch4b_default/group1' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:47 */
+			/* node '/pin-controller/pwm_ch4b_default/group1' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:47 */
 			group1 {
-				pinmux = < 0x324 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:48 */
+				pinmux = < 0x324 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:48 */
 			};
 		};
 
-		/* node '/pin-controller/adc_default' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:52 */
+		/* node '/pin-controller/adc_default' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:52 */
 		adc_default: adc_default {
-			phandle = < 0x18 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:139 */
+			phandle = < 0x18 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:139 */
 
-			/* node '/pin-controller/adc_default/group1' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:53 */
+			/* node '/pin-controller/adc_default/group1' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:53 */
 			group1 {
 				pinmux = < 0x34f >,
 				         < 0x36f >,
 				         < 0x38f >,
-				         < 0x3af >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:54 */
-				input-enable;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:55 */
+				         < 0x3af >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:54 */
+				input-enable;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/common/rpi_pico-pinctrl-common.dtsi:55 */
 			};
 		};
 
-		/* node '/pin-controller/pio0_spi0_default' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:13 */
+		/* node '/pin-controller/pio0_spi0_default' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:13 */
 		pio0_spi0_default: pio0_spi0_default {
-			phandle = < 0x1c >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:48 */
+			phandle = < 0x1c >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:48 */
 
-			/* node '/pin-controller/pio0_spi0_default/group1' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:15 */
+			/* node '/pin-controller/pio0_spi0_default/group1' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:15 */
 			group1 {
-				pinmux = < 0x3a6 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:16 */
+				pinmux = < 0x3a6 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:16 */
 			};
 		};
 
-		/* node '/pin-controller/airoc_wifi_default' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:20 */
+		/* node '/pin-controller/airoc_wifi_default' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:20 */
 		airoc_wifi_default: airoc_wifi_default {
-			phandle = < 0x1d >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:61 */
+			phandle = < 0x1d >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:61 */
 
-			/* node '/pin-controller/airoc_wifi_default/group1' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:22 */
+			/* node '/pin-controller/airoc_wifi_default/group1' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:22 */
 			group1 {
-				pinmux = < 0x306 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:23 */
-				input-enable;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:24 */
+				pinmux = < 0x306 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:23 */
+				input-enable;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:24 */
 			};
 		};
 
-		/* node '/pin-controller/airoc_wifi_host_wake' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:28 */
+		/* node '/pin-controller/airoc_wifi_host_wake' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:28 */
 		airoc_wifi_host_wake: airoc_wifi_host_wake {
-			phandle = < 0x1e >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:62 */
+			phandle = < 0x1e >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:62 */
 
-			/* node '/pin-controller/airoc_wifi_host_wake/group1' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:30 */
+			/* node '/pin-controller/airoc_wifi_host_wake/group1' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:30 */
 			group1 {
-				pinmux = < 0x305 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:31 */
-				input-enable;       /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:32 */
+				pinmux = < 0x305 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:31 */
+				input-enable;       /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts:32 */
 			};
 		};
 
-		/* node '/pin-controller/pwm_ch3a_default' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:77 */
+		/* node '/pin-controller/pwm_ch3a_default' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:77 */
 		pwm_ch3a_default: pwm_ch3a_default {
-			phandle = < 0x1b >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:93 */
+			phandle = < 0x1b >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:93 */
 
-			/* node '/pin-controller/pwm_ch3a_default/group1' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:78 */
+			/* node '/pin-controller/pwm_ch3a_default/group1' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:78 */
 			group1 {
-				pinmux = < 0xc4 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:79 */
+				pinmux = < 0xc4 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:79 */
 			};
 		};
 
-		/* node '/pin-controller/pio1_ws2812_default' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:83 */
+		/* node '/pin-controller/pio1_ws2812_default' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:83 */
 		pio1_ws2812_default: pio1_ws2812_default {
-			phandle = < 0x1f >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:104 */
+			phandle = < 0x1f >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:104 */
 
-			/* node '/pin-controller/pio1_ws2812_default/ws2812' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:84 */
+			/* node '/pin-controller/pio1_ws2812_default/ws2812' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:84 */
 			ws2812 {
-				pinmux = < 0x1a7 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:85 */
+				pinmux = < 0x1a7 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:85 */
 			};
 		};
 	};
@@ -860,12 +860,12 @@
 		status = "disabled";                  /* in zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi:477 */
 	};
 
-	/* node '/connector' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:30 */
+	/* node '/connector' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:30 */
 	pico_header: connector {
-		compatible = "raspberrypi,pico-header";    /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:31 */
-		#gpio-cells = < 0x2 >;                     /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:32 */
-		gpio-map-mask = < 0xffffffff 0xffffffc0 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:33 */
-		gpio-map-pass-thru = < 0x0 0x3f >;         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:34 */
+		compatible = "raspberrypi,pico-header";    /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:31 */
+		#gpio-cells = < 0x2 >;                     /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:32 */
+		gpio-map-mask = < 0xffffffff 0xffffffc0 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:33 */
+		gpio-map-pass-thru = < 0x0 0x3f >;         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:34 */
 		gpio-map = < 0x0 0x0 &gpio0 0x0 0x0 >,
 		           < 0x1 0x0 &gpio0 0x1 0x0 >,
 		           < 0x2 0x0 &gpio0 0x2 0x0 >,
@@ -891,87 +891,87 @@
 		           < 0x16 0x0 &gpio0 0x16 0x0 >,
 		           < 0x1a 0x0 &gpio0 0x1a 0x0 >,
 		           < 0x1b 0x0 &gpio0 0x1b 0x0 >,
-		           < 0x1c 0x0 &gpio0 0x1c 0x0 >;   /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:35 */
+		           < 0x1c 0x0 &gpio0 0x1c 0x0 >;   /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi:35 */
 	};
 
-	/* node '/relays' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:26 */
+	/* node '/relays' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:26 */
 	relays {
-		compatible = "gpio-leds"; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:27 */
+		compatible = "gpio-leds"; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:27 */
 
-		/* node '/relays/relay_1' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:28 */
+		/* node '/relays/relay_1' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:28 */
 		relay1: relay_1 {
-			gpios = < &gpio0 0x15 0x0 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:28 */
-			label = "Relay CH1";         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:28 */
+			gpios = < &gpio0 0x15 0x0 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:28 */
+			label = "Relay CH1";         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:28 */
 		};
 
-		/* node '/relays/relay_2' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:29 */
+		/* node '/relays/relay_2' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:29 */
 		relay2: relay_2 {
-			gpios = < &gpio0 0x14 0x0 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:29 */
-			label = "Relay CH2";         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:29 */
+			gpios = < &gpio0 0x14 0x0 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:29 */
+			label = "Relay CH2";         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:29 */
 		};
 
-		/* node '/relays/relay_3' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:30 */
+		/* node '/relays/relay_3' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:30 */
 		relay3: relay_3 {
-			gpios = < &gpio0 0x13 0x0 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:30 */
-			label = "Relay CH3";         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:30 */
+			gpios = < &gpio0 0x13 0x0 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:30 */
+			label = "Relay CH3";         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:30 */
 		};
 
-		/* node '/relays/relay_4' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:31 */
+		/* node '/relays/relay_4' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:31 */
 		relay4: relay_4 {
-			gpios = < &gpio0 0x12 0x0 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:31 */
-			label = "Relay CH4";         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:31 */
+			gpios = < &gpio0 0x12 0x0 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:31 */
+			label = "Relay CH4";         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:31 */
 		};
 
-		/* node '/relays/relay_5' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:32 */
+		/* node '/relays/relay_5' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:32 */
 		relay5: relay_5 {
-			gpios = < &gpio0 0x11 0x0 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:32 */
-			label = "Relay CH5";         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:32 */
+			gpios = < &gpio0 0x11 0x0 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:32 */
+			label = "Relay CH5";         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:32 */
 		};
 
-		/* node '/relays/relay_6' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:33 */
+		/* node '/relays/relay_6' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:33 */
 		relay6: relay_6 {
-			gpios = < &gpio0 0x10 0x0 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:33 */
-			label = "Relay CH6";         /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:33 */
+			gpios = < &gpio0 0x10 0x0 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:33 */
+			label = "Relay CH6";         /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:33 */
 		};
 
-		/* node '/relays/relay_7' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:34 */
+		/* node '/relays/relay_7' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:34 */
 		relay7: relay_7 {
-			gpios = < &gpio0 0xf 0x0 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:34 */
-			label = "Relay CH7";        /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:34 */
+			gpios = < &gpio0 0xf 0x0 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:34 */
+			label = "Relay CH7";        /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:34 */
 		};
 
-		/* node '/relays/relay_8' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:35 */
+		/* node '/relays/relay_8' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:35 */
 		relay8: relay_8 {
-			gpios = < &gpio0 0xe 0x0 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:35 */
-			label = "Relay CH8";        /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:35 */
+			gpios = < &gpio0 0xe 0x0 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:35 */
+			label = "Relay CH8";        /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:35 */
 		};
 	};
 
-	/* node '/pwmleds' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:39 */
+	/* node '/pwmleds' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:39 */
 	pwmleds {
-		compatible = "pwm-leds"; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:40 */
+		compatible = "pwm-leds"; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:40 */
 
-		/* node '/pwmleds/buzzer0' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:41 */
+		/* node '/pwmleds/buzzer0' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:41 */
 		buzzer0: buzzer0 {
-			pwms = < &pwm 0x6 0xf4240 0x0 >; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:42 */
-			label = "Buzzer";                /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:43 */
+			pwms = < &pwm 0x6 0xf4240 0x0 >; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:42 */
+			label = "Buzzer";                /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:43 */
 		};
 	};
 
-	/* node '/fstab' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:60 */
+	/* node '/fstab' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:60 */
 	fstab {
-		compatible = "zephyr,fstab"; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:61 */
+		compatible = "zephyr,fstab"; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:61 */
 
-		/* node '/fstab/lfs1' defined in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:62 */
+		/* node '/fstab/lfs1' defined in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:62 */
 		lfs1: lfs1 {
-			compatible = "zephyr,fstab,littlefs"; /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:63 */
-			read-size = < 0x10 >;                 /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:64 */
-			prog-size = < 0x100 >;                /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:65 */
-			cache-size = < 0x100 >;               /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:66 */
-			lookahead-size = < 0x80 >;            /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:67 */
-			block-cycles = < 0x200 >;             /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:68 */
-			partition = < &storage_partition >;   /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:69 */
-			mount-point = "/lfs1";                /* in ../Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:70 */
+			compatible = "zephyr,fstab,littlefs"; /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:63 */
+			read-size = < 0x10 >;                 /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:64 */
+			prog-size = < 0x100 >;                /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:65 */
+			cache-size = < 0x100 >;               /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:66 */
+			lookahead-size = < 0x80 >;            /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:67 */
+			block-cycles = < 0x200 >;             /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:68 */
+			partition = < &storage_partition >;   /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:69 */
+			mount-point = "/lfs1";                /* in ../Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay:70 */
 		};
 	};
 };

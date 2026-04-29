@@ -1,2 +1,2 @@
 # Load board Kconfig descriptions.
-osource "/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/Kconfig.dev_rpi_pico"
+osource "/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/Kconfig.dev_rpi_pico"

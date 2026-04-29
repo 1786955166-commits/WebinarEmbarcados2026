@@ -9,12 +9,6 @@ target_include_directories(app PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/inc
 )
 
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../lib/common   ${CMAKE_BINARY_DIR}/lib/common)
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../lib/rtc_mgr  ${CMAKE_BINARY_DIR}/lib/rtc_mgr)
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../lib/fs_mgr   ${CMAKE_BINARY_DIR}/lib/fs_mgr)
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../lib/wifi_mgr ${CMAKE_BINARY_DIR}/lib/wifi_mgr)
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../lib/ringtone ${CMAKE_BINARY_DIR}/lib/ringtone)
-
 # Add all source files
 file(GLOB APP_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.c)
 target_sources(app PRIVATE ${APP_SOURCES})

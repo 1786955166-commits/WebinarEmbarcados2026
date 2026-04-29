@@ -39,12 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/zephyr/drivers/ethernet/dsa/cmake_install.cmake")
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/zephyr/drivers/ethernet/phy/cmake_install.cmake")
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/zephyr/drivers/ethernet/eth_nxp_enet_qos/cmake_install.cmake")
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/zephyr/drivers/ethernet/nxp_imx_netc/cmake_install.cmake")
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/zephyr/drivers/ethernet/dwc_xgmac/cmake_install.cmake")
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/zephyr/drivers/ethernet/intel/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/zephyr/drivers/ethernet/dsa/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/zephyr/drivers/ethernet/phy/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/zephyr/drivers/ethernet/eth_nxp_enet_qos/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/zephyr/drivers/ethernet/nxp_imx_netc/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/zephyr/drivers/ethernet/dwc_xgmac/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/zephyr/drivers/ethernet/intel/cmake_install.cmake")
 
 endif()
 

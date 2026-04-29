@@ -379,6 +379,12 @@ config ZEPHYR_ZCBOR_MODULE
 	bool
 	default y
 endmenu
+menu "gzm (/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/lib)"
+osource "/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/lib/zephyr/Kconfig"
+config ZEPHYR_GZM_MODULE
+	bool
+	default y
+endmenu
 config ZEPHYR_NRF_HW_MODELS_MODULE
 	bool
 	default y

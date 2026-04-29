@@ -39,101 +39,101 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/machine/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/machine/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/include/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/include/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/argz/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/argz/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/ctype/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/ctype/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/errno/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/errno/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/iconv/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/iconv/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/misc/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/misc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/picolib/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/picolib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/posix/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/posix/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/search/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/search/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/signal/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/signal/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/ssp/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/ssp/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/stdlib/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/stdlib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/string/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/string/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/time/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/time/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/tinystdio/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/tinystdio/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/uchar/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/uchar/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/xdr/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/xdr/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/locale/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/locale/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/ubsan/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/ubsan/cmake_install.cmake")
 endif()
 

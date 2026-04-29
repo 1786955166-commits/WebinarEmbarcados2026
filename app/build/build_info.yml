@@ -1,19 +1,19 @@
 cmake:
   application:
-    configuration-dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app'
-    source-dir: '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app'
+    configuration-dir: '/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app'
+    source-dir: '/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app'
   board:
     name: 'dev_rpi_pico'
     path:
-     - '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico'
+     - '/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico'
     qualifiers: 'rp2040/w'
     revision: ''
   devicetree:
     bindings-dirs:
      - '/home/jaga/zephyrproject/zephyr/dts/bindings'
     files:
-     - '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts'
-     - '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay'
+     - '/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts'
+     - '/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay'
     include-dirs:
      - '/home/jaga/zephyrproject/modules/hal/ambiq/dts'
      - '/home/jaga/zephyrproject/modules/hal/atmel/include'
@@ -41,16 +41,16 @@ cmake:
      - '/home/jaga/zephyrproject/zephyr/dts/arc'
      - '/home/jaga/zephyrproject/zephyr/dts'
     user-files:
-     - '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay'
+     - '/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay'
   kconfig:
     extra-user-files:
      - 'debug.conf'
     files:
-     - '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w_defconfig'
-     - '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/prj.conf'
-     - '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/debug.conf'
+     - '/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w_defconfig'
+     - '/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/prj.conf'
+     - '/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/debug.conf'
     user-files:
-     - '/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/prj.conf'
+     - '/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/prj.conf'
   toolchain:
     name: 'zephyr'
     path: '/home/jaga/zephyr-sdk-1.0.1'
@@ -59,6 +59,6 @@ cmake:
     zephyr-base: '/home/jaga/zephyrproject/zephyr'
 version: '0.1.0'
 west:
-  command: '/home/jaga/zephyrproject/.venv/bin/west build -b dev_rpi_pico/rp2040/w -p -s app -d app/build -- -DBOARD_ROOT=/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026 -DEXTRA_CONF_FILE=debug.conf -DDTC_OVERLAY_FILE=/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay'
+  command: '/home/jaga/zephyrproject/.venv/bin/west build -b dev_rpi_pico/rp2040/w -p -s app -d app/build -- -DBOARD_ROOT=/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026 -DZEPHYR_EXTRA_MODULES=/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/lib -DEXTRA_CONF_FILE=debug.conf -DDTC_OVERLAY_FILE=/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay'
   topdir: '/home/jaga/zephyrproject'
   version: '1.5.0'

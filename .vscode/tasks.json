@@ -18,6 +18,7 @@
                 "-d", "app/build",
                 "--",
                 "-DBOARD_ROOT=${workspaceFolder}",
+                "-DZEPHYR_EXTRA_MODULES=${workspaceFolder}/lib",
                 "-DDTC_OVERLAY_FILE=${workspaceFolder}/app/boards/dev_rpi_pico_rp2040_w.overlay"
             ],
             "problemMatcher": ["$gcc"]
@@ -32,6 +33,7 @@
                 "-d", "app/build",
                 "--",
                 "-DBOARD_ROOT=${workspaceFolder}",
+                "-DZEPHYR_EXTRA_MODULES=${workspaceFolder}/lib",
                 "-DEXTRA_CONF_FILE=debug.conf",
                 "-DDTC_OVERLAY_FILE=${workspaceFolder}/app/boards/dev_rpi_pico_rp2040_w.overlay"
             ],
@@ -56,6 +58,13 @@
             "type": "shell",
             "command": "${VIRTUAL_ENV}/bin/west",
             "args": ["build", "-d", "app/build", "-t", "ram_report"],
+            "problemMatcher": []
+        },
+        {
+            "label": "app: clear",
+            "type": "shell",
+            "command": "rm",
+            "args": ["-rf", "${workspaceFolder}/app/build"],
             "problemMatcher": []
         }
     ]

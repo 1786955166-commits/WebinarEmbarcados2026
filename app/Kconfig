@@ -9,8 +9,6 @@ source "Kconfig.zephyr"
 
 endmenu
 
-rsource "../lib/Kconfig"
-
 menu "Nordic Sta sample"
 
 config CONNECTION_IDLE_TIMEOUT

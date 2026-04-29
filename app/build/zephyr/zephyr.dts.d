@@ -1,6 +1,6 @@
 empty_file.o: /home/jaga/zephyrproject/zephyr/misc/empty_file.c \
- /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts \
- /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi \
+ /home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico_rp2040_w.dts \
+ /home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-common.dtsi \
  /home/jaga/zephyrproject/zephyr/dts/common/freq.h \
  /home/jaga/zephyrproject/zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi \
  /home/jaga/zephyrproject/zephyr/dts/arm/armv6-m.dtsi \
@@ -23,12 +23,12 @@ empty_file.o: /home/jaga/zephyrproject/zephyr/misc/empty_file.c \
  /home/jaga/zephyrproject/zephyr/include/zephyr/dt-bindings/reset/rp2040_reset.h \
  /home/jaga/zephyrproject/zephyr/dts/common/mem.h \
  /home/jaga/zephyrproject/zephyr/dts/arm/raspberrypi/rpi_pico/override.dtsi \
- /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-pinctrl.dtsi \
+ /home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/dev_rpi_pico-pinctrl.dtsi \
  /home/jaga/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h \
  /home/jaga/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/rpi-pico-pinctrl-common.h \
- /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/../common/rpi_pico-pinctrl-common.dtsi \
+ /home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/boards/raspberrypi/dev_rpi_pico/../common/rpi_pico-pinctrl-common.dtsi \
  /home/jaga/zephyrproject/zephyr/include/zephyr/dt-bindings/pwm/pwm.h \
- /home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay \
+ /home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay \
  /home/jaga/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h \
  /home/jaga/zephyrproject/zephyr/include/zephyr/dt-bindings/pwm/pwm.h \
  /home/jaga/zephyrproject/zephyr/include/zephyr/dt-bindings/led/led.h

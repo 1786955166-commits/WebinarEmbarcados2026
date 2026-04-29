@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: Apache-2.0
 
-name: zlib
+name: gzm
 build:
   cmake: zephyr
   kconfig: zephyr/Kconfig

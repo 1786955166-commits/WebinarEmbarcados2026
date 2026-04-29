@@ -39,27 +39,27 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/include/sys/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/include/sys/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/include/machine/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/include/machine/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/include/ssp/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/include/ssp/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/include/rpc/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/include/rpc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/jaga/Workspace/work/27-GZM/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/include/arpa/cmake_install.cmake")
+  include("/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/build/modules/picolibc/newlib/libc/include/arpa/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

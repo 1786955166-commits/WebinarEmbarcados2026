@@ -63,4 +63,5 @@ list(APPEND kconfig_env_dirs ZEPHYR_TRUSTED_FIRMWARE_A_MODULE_DIR=/home/jaga/zep
 list(APPEND kconfig_env_dirs ZEPHYR_TRUSTED_FIRMWARE_M_MODULE_DIR=/home/jaga/zephyrproject/modules/tee/tf-m/trusted-firmware-m)
 list(APPEND kconfig_env_dirs ZEPHYR_UOSCORE_UEDHOC_MODULE_DIR=/home/jaga/zephyrproject/modules/lib/uoscore-uedhoc)
 list(APPEND kconfig_env_dirs ZEPHYR_ZCBOR_MODULE_DIR=/home/jaga/zephyrproject/modules/lib/zcbor)
+list(APPEND kconfig_env_dirs ZEPHYR_GZM_MODULE_DIR=/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/lib)
 list(APPEND kconfig_env_dirs ZEPHYR_NRF_HW_MODELS_MODULE_DIR=/home/jaga/zephyrproject/modules/bsim_hw_models/nrf_hw_models)
