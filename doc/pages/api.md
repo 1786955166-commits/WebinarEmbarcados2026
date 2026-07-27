@@ -1,53 +1,53 @@
-[← README](../../README.md) · [Arquitetura](architecture.md)
+[← README](../../README.md) · [Architecture](architecture.md)
 
-# API REST do firmware
+# Firmware REST API
 
-Documentação detalhada de cada endpoint HTTP exposto pelo Pico W, mostrando
-como uma requisição flui da página `index.html` até o handler em C que
-controla o hardware (e o caminho de volta).
+Detailed documentation of every HTTP endpoint exposed by the Pico W,
+showing how a request flows from the `index.html` page down to the C
+handler that drives the hardware (and the way back).
 
-> Para a visão geral da arquitetura (dois clientes, STATIC vs DYNAMIC,
-> como os `.gz.inc` viram resources em flash) com diagramas, veja
-> [`architecture.md`](architecture.md). Este doc foca no contrato REST
-> de cada endpoint individual.
+> For the architecture overview (two clients, STATIC vs DYNAMIC, how the
+> `.gz.inc` files become resources in flash) with diagrams, see
+> [`architecture.md`](architecture.md). This doc focuses on the REST
+> contract of each individual endpoint.
 
-## Princípio geral
+## General principle
 
-O firmware roda o servidor HTTP do Zephyr (`CONFIG_HTTP_SERVER`) na porta 80.
-Cada endpoint é um **contrato REST**, qualquer cliente HTTP pode chamar
-diretamente: o browser via `index.html`, `curl` da linha de comando,
-Postman, app mobile, outro firmware na rede.
+The firmware runs Zephyr's HTTP server (`CONFIG_HTTP_SERVER`) on port 80.
+Every endpoint is a **REST contract**, and any HTTP client can call it
+directly: the browser through `index.html`, `curl` from the command line,
+Postman, a mobile app, another firmware on the network.
 
-A página servida em `/` é apenas **um cliente** desse API, a única
-peculiaridade é que o próprio Pico W também serve essa página, gzipada,
-diretamente da flash.
+The page served at `/` is just **one client** of this API, the only
+peculiarity being that the Pico W itself also serves that page, gzipped,
+straight from flash.
 
-## Lifecycle da página (entry comum a quase tudo)
+## Page lifecycle (the entry point common to almost everything)
 
-Toda interação que parte do browser passa por essa mesma sequência de
-carregamento:
+Every interaction that starts in the browser goes through this same
+loading sequence:
 
 ```
-1. Usuário abre http://embarcados.local/
-2. Browser GET /              → index_html_resource → index.html (gzip, da flash)
-3. Browser GET /style.css     → style_css_resource  → style.css (gzip, da flash)
-4. Browser GET /app.js        → app_js_resource     → app.js (gzip, da flash)
-5. app.js executa → DOMContentLoaded handler dispara as chamadas iniciais
+1. User opens http://embarcados.local/
+2. Browser GET /              → index_html_resource → index.html (gzip, from flash)
+3. Browser GET /style.css     → style_css_resource  → style.css (gzip, from flash)
+4. Browser GET /app.js        → app_js_resource     → app.js (gzip, from flash)
+5. app.js runs → the DOMContentLoaded handler fires the initial calls
    (fetchInfo, fetchTime, fetchRelays, fetchRgb, fetchBuzzerStatus, fetchFiles)
-   e registra event listeners nos botões / sliders
+   and registers event listeners on the buttons / sliders
 ```
 
-A partir do passo 5 cada endpoint tem seu próprio caminho. Os docs abaixo
-começam o trace nesse ponto onde a chamada concreta é disparada, pode ser
-uma das chamadas automáticas iniciais ou uma interação do usuário.
+From step 5 on, each endpoint has its own path. The docs below start the
+trace at that point where the concrete call is fired, which may be one of
+the initial automatic calls or a user interaction.
 
-### Exemplo via `curl`, pegar a página inicial
+### Example with `curl`, fetching the home page
 
 ```bash
-# Comando
+# Command
 $ curl --compressed http://embarcados.local/
 
-# Resposta esperada
+# Expected response
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -62,14 +62,14 @@ $ curl --compressed http://embarcados.local/
 </html>
 ```
 
-`--compressed` faz o curl negociar gzip e descomprimir, sem isso você
-recebe o blob binário direto da flash. As linhas `<link>` e `<script>` são
-**a única coisa** que diz ao browser pra buscar os outros 2 arquivos.
+`--compressed` makes curl negotiate gzip and decompress it, without it you
+get the binary blob straight from flash. The `<link>` and `<script>` lines
+are **the only thing** telling the browser to fetch the other 2 files.
 
-### Exemplo via `curl` seguindo a rota, reproduzir o que o browser faz
+### Example with `curl` following the route, reproducing what the browser does
 
-O browser, ao parsear o HTML acima, dispara automaticamente mais 2 GETs.
-Você pode replicar manualmente a mesma sequência:
+The browser, when parsing the HTML above, automatically fires 2 more GETs.
+You can replicate the same sequence by hand:
 
 ```bash
 $ curl --compressed http://embarcados.local/         # GET /          → index.html
@@ -77,8 +77,8 @@ $ curl --compressed http://embarcados.local/style.css # GET /style.css → style
 $ curl --compressed http://embarcados.local/app.js   # GET /app.js    → app.js
 ```
 
-3 GETs independentes, não há mágica. Cada URL bate em um
-`HTTP_RESOURCE_DEFINE` distinto em [`web_app.c`](../../app/src/web_app.c#L295-L297):
+3 independent GETs, there is no magic. Each URL hits a distinct
+`HTTP_RESOURCE_DEFINE` in [`web_app.c`](../../app/src/web_app.c#L295-L297):
 
 ```c
 HTTP_RESOURCE_DEFINE(index_html_resource, web_service, "/",          &index_html_detail);
@@ -86,40 +86,40 @@ HTTP_RESOURCE_DEFINE(app_js_resource,     web_service, "/app.js",    &app_js_det
 HTTP_RESOURCE_DEFINE(style_css_resource,  web_service, "/style.css", &style_css_detail);
 ```
 
-Inspecionar os headers confirma que o conteúdo vem gzipado da flash:
+Inspecting the headers confirms the content comes gzipped from flash:
 ```bash
-# Comando
+# Command
 $ curl -v http://embarcados.local/style.css 2>&1 | grep -i "content-"
 
-# Resposta esperada
+# Expected response
 < Content-Type: text/css
 < Content-Encoding: gzip
 < Transfer-Encoding: chunked
 ```
 
-## Endpoints documentados
+## Documented endpoints
 
-| Doc | Endpoint | Disparado por |
+| Doc | Endpoint | Triggered by |
 |---|---|---|
-| [api-info.md](api-info.md) | `/api/info` | Auto-fetch no `DOMContentLoaded` |
-| [api-time.md](api-time.md) | `/api/time` | Auto-fetch + polling 1 s |
-| [api-relays.md](api-relays.md) | `/api/relays` | Botões Turn ON/OFF de cada canal |
-| [api-rgb.md](api-rgb.md) | `/api/rgb` | Sliders RGB + botões Apply/OFF |
-| [api-buzzer.md](api-buzzer.md) | `/api/buzzer` | Botões Play/Stop |
-| [api-files.md](api-files.md) | `/api/files` | Refresh + navegação de pastas |
-| [api-upload.md](api-upload.md) | `/api/upload` | `<input type="file">` + botão Upload |
-| [api-delete.md](api-delete.md) | `/api/delete` | Botão Delete em cada linha |
-| [api-download.md](api-download.md) | `/download/*` | Link `<a download>` (sem JS) |
+| [api-info.md](api-info.md) | `/api/info` | Auto-fetch on `DOMContentLoaded` |
+| [api-time.md](api-time.md) | `/api/time` | Auto-fetch + 1 s polling |
+| [api-relays.md](api-relays.md) | `/api/relays` | Turn ON/OFF buttons on each channel |
+| [api-rgb.md](api-rgb.md) | `/api/rgb` | RGB sliders + Apply/OFF buttons |
+| [api-buzzer.md](api-buzzer.md) | `/api/buzzer` | Play/Stop buttons |
+| [api-files.md](api-files.md) | `/api/files` | Refresh + folder navigation |
+| [api-upload.md](api-upload.md) | `/api/upload` | `<input type="file">` + Upload button |
+| [api-delete.md](api-delete.md) | `/api/delete` | Delete button on each row |
+| [api-download.md](api-download.md) | `/download/*` | `<a download>` link (no JS) |
 
-## Convenção dos docs
+## Doc convention
 
-Cada arquivo segue a mesma estrutura:
+Every file follows the same structure:
 
-1. **Tabela do endpoint**, método(s), URL, body, resposta
-2. **Exemplo via `curl`**, comando + resposta esperada
-3. **Caminho da requisição**, passo a passo numerado do match da URL
-   com o `HTTP_RESOURCE_DEFINE` até o handler em C devolver a resposta
+1. **Endpoint table**, method(s), URL, body, response
+2. **Example with `curl`**, command + expected response
+3. **Request path**, numbered step by step from the URL matching the
+   `HTTP_RESOURCE_DEFINE` down to the C handler returning the response
 
 ---
 
-[← README](../../README.md) · [Próximo: api-info →](api-info.md)
+[← README](../../README.md) · [Next: api-info →](api-info.md)

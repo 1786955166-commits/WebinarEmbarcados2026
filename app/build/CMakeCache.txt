@@ -327,9 +327,6 @@ DTC:FILEPATH=/home/jaga/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux
 // dts2.overlay"
 DTC_OVERLAY_FILE:STRING=/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/boards/dev_rpi_pico_rp2040_w.overlay
 
-//No help, variable specified on the command line.
-EXTRA_CONF_FILE:UNINITIALIZED=debug.conf
-
 //Path to a program.
 GEN_KOBJECT_LIST:FILEPATH=/home/jaga/zephyrproject/zephyr/scripts/build/gen_kobject_list.py
 

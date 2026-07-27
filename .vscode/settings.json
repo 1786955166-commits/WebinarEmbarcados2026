@@ -39,5 +39,6 @@
 
     "files.associations": {
         "types.h": "c"
-    }
+    },
+    "cdt.debug.sourceHighlighting": false
 }

@@ -1,85 +1,86 @@
-[← README](../../README.md) · [Índice de APIs](api.md)
+[← README](../../README.md) · [API index](api.md)
 
 # API: `/download/*`
 
-Faz streaming de um arquivo do LittleFS de volta pro cliente HTTP. O
-path no `*` é relativo ao mount point (`/lfs1`). Define `Content-Type`
-automaticamente com base na extensão.
+Streams a file from LittleFS back to the HTTP client. The path in the `*`
+is relative to the mount point (`/lfs1`). It sets `Content-Type`
+automatically based on the file extension.
 
 ## Endpoint
 
-| Método | URL                   | Body | Resposta |
-|--------|-----------------------|------|----------|
-| GET    | `/download/<arquivo>` | -    | Binário (chunked, com Content-Type apropriado) |
+| Method | URL                | Body | Response |
+|--------|--------------------|------|----------|
+| GET    | `/download/<file>` | -    | Binary (chunked, with the appropriate Content-Type) |
 
-## Exemplo via `curl`
+## Example with `curl`
 
 ```bash
-# Comando
+# Command
 $ curl -O http://embarcados.local/download/guzman.jpeg
 
-# Resposta esperada
+# Expected response
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 21886  100 21886    0     0   142k      0 --:--:-- --:--:-- --:--:--  143k
 ```
 
-Verificar o arquivo baixado:
+Checking the downloaded file:
 ```bash
-# Comando
+# Command
 $ file guzman.jpeg
 
-# Resposta esperada
+# Expected response
 guzman.jpeg: JPEG image data, JFIF standard 1.01, ...
 ```
 
-## Dois caminhos para chamar este endpoint
+## Two ways to call this endpoint
 
-O servidor HTTP do Zephyr trata todo cliente igual, é só HTTP. Esse
-endpoint é disparado por dois tipos de cliente:
+Zephyr's HTTP server treats every client the same, it is only HTTP. This
+endpoint is triggered by two kinds of client:
 
-**1. Cliente externo** (`curl`, Postman, app mobile, outro firmware na
-rede), bate direto na URL. É o caso do exemplo `curl` mostrado acima.
+**1. External client** (`curl`, Postman, a mobile app, another firmware on
+the network), hitting the URL directly. That is the `curl` example above.
 
-**2. Browser carregando a página servida pelo Pico W**, usuário abre
-`http://embarcados.local/`, browser baixa `/`, `/style.css` e `/app.js`,
-e a tabela renderizada por `app.js` mostra um link `<a download>` em
-cada linha. Trigger: clique no link Download, **o browser trata
-nativamente** (sem JS envolvido), faz GET na URL e abre o "Save As" com
-o nome do arquivo. Lifecycle completo em [api.md](api.md).
+**2. Browser loading the page served by the Pico W**, the user opens
+`http://embarcados.local/`, the browser downloads `/`, `/style.css` and
+`/app.js`, and the table rendered by `app.js` shows an `<a download>` link
+on each row. Trigger: clicking the Download link, which **the browser
+handles natively** (no JS involved), issuing a GET on the URL and opening
+the "Save As" dialog with the file name. Full lifecycle in
+[api.md](api.md).
 
-> Há também um botão "View" na mesma linha que faz `fetch()` no mesmo
-> endpoint via JS e mostra inline numa modal. Esse caso passa pelo JS,
-> mas chega no mesmo handler.
+> There is also a "View" button on the same row that does a `fetch()` on
+> the same endpoint through JS and shows the content inline in a modal.
+> That case goes through JS, but reaches the same handler.
 
-**Os dois caminhos convergem** no `HTTP_RESOURCE_DEFINE` registrado em
-[`web_app.c`](../../app/src/web_app.c), ponto único de entrada no
-firmware. A seção abaixo descreve esse trajeto comum, do match da URL
-até o handler devolver a resposta.
+**Both paths converge** on the `HTTP_RESOURCE_DEFINE` registered in
+[`web_app.c`](../../app/src/web_app.c), the single entry point into the
+firmware. The section below describes that common route, from the URL
+match down to the handler returning the response.
 
-## Caminho da requisição
+## Request path
 
-**1. URL `/download/...` casa com o resource wildcard** -
+**1. The URL `/download/...` matches the wildcard resource** -
 [web_app.c:304](../../app/src/web_app.c#L304):
 ```c
 HTTP_RESOURCE_DEFINE(download_resource, web_service, "/download/*", &download_detail);
 ```
 
-(O `*` é capturado pelo Zephyr quando `CONFIG_HTTP_SERVER_RESOURCE_WILDCARD=y`.)
+(The `*` is captured by Zephyr when `CONFIG_HTTP_SERVER_RESOURCE_WILDCARD=y`.)
 
-**2. Handler em [web_app.c:761](../../app/src/web_app.c#L761)**, extrai
-o path da URL (após `/download`), faz URL-decode, prepende `/lfs1` e
-chama `fs_open`. Define o `Content-Type` baseado na extensão via
-`web_app_content_type_from_path` (image/jpeg, application/pdf, etc.).
-Lê em chunks de 1024 bytes via `fs_read`, devolvendo cada chunk
-ao kernel HTTP server até EOF.
+**2. Handler at [web_app.c:761](../../app/src/web_app.c#L761)**, extracts
+the path from the URL (after `/download`), URL-decodes it, prepends
+`/lfs1` and calls `fs_open`. It sets the `Content-Type` based on the
+extension through `web_app_content_type_from_path` (image/jpeg,
+application/pdf, and so on). It reads in 1024-byte chunks with `fs_read`,
+handing each chunk back to the HTTP server kernel until EOF.
 
-Sincronização: o handler usa um semáforo `download_lock` mais um
-`download_owner` (ponteiro do client) pra serializar, só um download
-ativo por vez, e diferentes clients aguardam.
+Synchronization: the handler uses a `download_lock` semaphore plus a
+`download_owner` (the client pointer) to serialize access, so only one
+download is active at a time and other clients wait.
 
-**3. Cliente recebe** o stream completo, escreve em arquivo local.
+**3. The client receives** the full stream and writes it to a local file.
 
 ---
 
-[← Anterior: api-delete](api-delete.md) · [Índice de APIs](api.md) · [README](../../README.md)
+[← Previous: api-delete](api-delete.md) · [API index](api.md) · [README](../../README.md)

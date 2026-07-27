@@ -1,62 +1,62 @@
-[← README](../../README.md) · [Índice de APIs](api.md)
+[← README](../../README.md) · [API index](api.md)
 
 # API: `/api/delete`
 
-Remove um arquivo do LittleFS por path absoluto. Aceita apenas paths
-que começam com `/lfs1` (defesa contra path traversal).
+Removes a file from LittleFS by absolute path. It only accepts paths that
+start with `/lfs1` (a defense against path traversal).
 
 ## Endpoint
 
-| Método | URL           | Body                            | Resposta |
+| Method | URL           | Body                            | Response |
 |--------|---------------|---------------------------------|----------|
-| POST   | `/api/delete` | `{"path":"/lfs1/.../arquivo"}` | `{"ok":true,"path":"..."}` ou erro |
+| POST   | `/api/delete` | `{"path":"/lfs1/.../file"}` | `{"ok":true,"path":"..."}` or an error |
 
-## Exemplo via `curl`
+## Example with `curl`
 
 ```bash
-# Comando
+# Command
 $ curl -X POST http://embarcados.local/api/delete \
     -H "Content-Type: application/json" \
     -d '{"path":"/lfs1/guzman.jpeg"}'
 
-# Resposta esperada
+# Expected response
 {"ok":true,"path":"/lfs1/guzman.jpeg"}
 ```
 
-## Dois caminhos para chamar este endpoint
+## Two ways to call this endpoint
 
-O servidor HTTP do Zephyr trata todo cliente igual, é só HTTP. Esse
-endpoint é disparado por dois tipos de cliente:
+Zephyr's HTTP server treats every client the same, it is only HTTP. This
+endpoint is triggered by two kinds of client:
 
-**1. Cliente externo** (`curl`, Postman, app mobile, outro firmware na
-rede), bate direto na URL. É o caso do exemplo `curl` mostrado acima.
+**1. External client** (`curl`, Postman, a mobile app, another firmware on
+the network), hitting the URL directly. That is the `curl` example above.
 
-**2. Browser carregando a página servida pelo Pico W**, usuário abre
-`http://embarcados.local/`, browser baixa `/`, `/style.css` e `/app.js`,
-e o `app.js` dispara o POST via `fetch()`. Trigger: clique no botão
-Delete na linha de um arquivo da tabela, com `confirm()` de segurança
-antes de enviar. Lifecycle completo em [api.md](api.md).
+**2. Browser loading the page served by the Pico W**, the user opens
+`http://embarcados.local/`, the browser downloads `/`, `/style.css` and
+`/app.js`, and `app.js` fires the POST through `fetch()`. Trigger:
+clicking the Delete button on a file row in the table, with a `confirm()`
+safety prompt before sending. Full lifecycle in [api.md](api.md).
 
-**Os dois caminhos convergem** no `HTTP_RESOURCE_DEFINE` registrado em
-[`web_app.c`](../../app/src/web_app.c), ponto único de entrada no
-firmware. A seção abaixo descreve esse trajeto comum, do match da URL
-até o handler devolver a resposta.
+**Both paths converge** on the `HTTP_RESOURCE_DEFINE` registered in
+[`web_app.c`](../../app/src/web_app.c), the single entry point into the
+firmware. The section below describes that common route, from the URL
+match down to the handler returning the response.
 
-## Caminho da requisição
+## Request path
 
-**1. URL `/api/delete` casa com o resource registrado** -
+**1. The URL `/api/delete` matches the registered resource** -
 [web_app.c:305](../../app/src/web_app.c#L305):
 ```c
 HTTP_RESOURCE_DEFINE(delete_resource, web_service, "/api/delete", &delete_detail);
 ```
 
-**2. Handler em [web_app.c:848](../../app/src/web_app.c#L848)**, copia
-o body pra buffer local, parseia `path` via `json_obj_parse`, valida
-que começa com `/lfs1` (rejeita paths absolutos arbitrários), chama
-`fs_unlink(path)`.
+**2. Handler at [web_app.c:848](../../app/src/web_app.c#L848)**, copies
+the body into a local buffer, parses `path` with `json_obj_parse`,
+validates that it starts with `/lfs1` (rejecting arbitrary absolute paths),
+and calls `fs_unlink(path)`.
 
-**3. Servidor envia** `{"ok":true,"path":"..."}` ao cliente.
+**3. The server sends** `{"ok":true,"path":"..."}` to the client.
 
 ---
 
-[← Anterior: api-upload](api-upload.md) · [Índice de APIs](api.md) · [Próximo: api-download →](api-download.md)
+[← Previous: api-upload](api-upload.md) · [API index](api.md) · [Next: api-download →](api-download.md)

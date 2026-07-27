@@ -1,18 +1,18 @@
 # app/
 
-Aplicação principal do firmware (`WebinarEmbarcados2026`). Para visão
-geral do projeto, build, testes, endpoints REST e arquitetura, veja o
-[README do projeto](../README.md) e a documentação em
+Main firmware application (`WebinarEmbarcados2026`). For the project
+overview, build, tests, REST endpoints and architecture, see the
+[project README](../README.md) and the documentation in
 [`doc/pages/`](../doc/pages/).
 
 ```
 app/
-├── inc/                ← headers internos da aplicação
-├── src/                ← código C (main, setup, network_app, web_app)
-├── www/                ← interface web embutida (gzip via CMake)
-├── boards/             ← Device Tree overlay da placa
+├── inc/                ← internal application headers
+├── src/                ← C code (main, setup, network_app, web_app)
+├── www/                ← embedded web interface (gzipped via CMake)
+├── boards/             ← board Device Tree overlay
 ├── CMakeLists.txt
-├── prj.conf            ← Kconfig base do firmware
-├── debug.conf          ← Overlay de debug
-└── VERSION             ← Versão (gera app_version.h)
+├── prj.conf            ← firmware base Kconfig
+├── debug.conf          ← debug overlay
+└── VERSION             ← version (generates app_version.h)
 ```

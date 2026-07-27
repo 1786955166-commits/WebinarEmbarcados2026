@@ -15,7 +15,7 @@
                 "enabled": true,
                 "samplesPerSecond": 4
             },
-            "preLaunchTask": "app: build",
+            "preLaunchTask": "app: build (debug.conf)",
         },
         {
             "name": "Pico-Probe",
@@ -37,7 +37,7 @@
                 "break main",
                 "continue"
             ],
-            "preLaunchTask": "app: build"
+            "preLaunchTask": "app: build",
         }
     ]
 }

@@ -12,7 +12,7 @@
 #include <zephyr/drivers/led_strip.h>
 #include <zephyr/fs/fs.h>
 
-#include <app_version.h>
+#include <zephyr/app_version.h>
 
 #include "web_app.h"
 #include <gzm/ringtone.h>

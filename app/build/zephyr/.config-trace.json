@@ -524,7 +524,7 @@
     "CONFIG_SHELL_STACK_SIZE",
     "y",
     "int",
-    "1024",
+    "2048",
     "assign",
     [
       "/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/prj.conf",
@@ -4270,9 +4270,9 @@
     "y",
     "bool",
     "y",
-    "select",
+    "imply",
     [
-      "DEBUG_THREAD_INFO && !SMP"
+      "KERNEL_SHELL && SHELL"
     ]
   ],
   [
@@ -4280,9 +4280,9 @@
     "y",
     "bool",
     "y",
-    "select",
+    "imply",
     [
-      "DEBUG_THREAD_INFO && !SMP"
+      "KERNEL_SHELL && SHELL"
     ]
   ],
   [
@@ -8860,10 +8860,10 @@
     "y",
     "int",
     "6",
-    "default",
+    "assign",
     [
-      "/home/jaga/zephyrproject/zephyr/lib/os/zvfs/Kconfig",
-      70
+      "/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/prj.conf",
+      141
     ]
   ],
   [
@@ -9382,12 +9382,9 @@
     "CONFIG_DEBUG_THREAD_INFO",
     "y",
     "bool",
-    "y",
-    "assign",
-    [
-      "/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/debug.conf",
-      6
-    ]
+    null,
+    "unset",
+    null
   ],
   [
     "CONFIG_DEBUG_COREDUMP",
@@ -13951,7 +13948,7 @@
     "CONFIG_HTTP_SERVER_STACK_SIZE",
     "y",
     "int",
-    "4096",
+    "6144",
     "assign",
     [
       "/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/prj.conf",
@@ -14486,11 +14483,11 @@
     "CONFIG_NET_SOCKETS_POLL_MAX",
     "y",
     "int",
-    "6",
-    "assign",
+    "0",
+    "default",
     [
-      "/home/jaga/Workspace/work/29-PortalEmbarcados/WebinarEmbarcados2026/app/prj.conf",
-      141
+      "/home/jaga/zephyrproject/zephyr/subsys/net/lib/sockets/Kconfig",
+      28
     ]
   ],
   [
